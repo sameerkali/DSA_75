@@ -497,20 +497,44 @@ const { LastPage, CodeSharp } = require("@material-ui/icons");
 
 // after watching striver's video ( striver bhaiya zindabaad )
 
-const MaximumProductSubarray = (arr) => {
-  let pre = 1;
-  let suff = 1;
-  let ans = -Infinity;
-  let n = arr.length;
-  for (let i = 0; i < n; i++) {
-    if (pre == 0) pre = 1;
-    if (suff == 0) suff = 1;
+// const MaximumProductSubarray = (arr) => {
+//   let pre = 1;
+//   let suff = 1;
+//   let ans = -Infinity;
+//   let n = arr.length;
+//   for (let i = 0; i < n; i++) {
+//     if (pre == 0) pre = 1;
+//     if (suff == 0) suff = 1;
 
-    pre *= arr[i];
-    suff *= arr[n - i - 1];
-    ans = Math.max(ans, Math.max(pre, suff));
-  }
-  return ans;
-};
-let arr = [4, 3, 2, 1, 0, 4, 3, -2, -2];
-console.log(MaximumProductSubarray(arr));
+//     pre *= arr[i];
+//     suff *= arr[n - i - 1];
+//     ans = Math.max(ans, Math.max(pre, suff));
+//   }
+//   return ans;
+// };
+// let arr = [4, 3, 2, 1, 0, 4, 3, -2, -2];
+// console.log(MaximumProductSubarray(arr));
+
+////////////////// 06 leetcode 1351. Count Negative Numbers in a Sorted Matrix, 08 June 2023 ////////////////////
+
+// const countNegatives = (grid) => {
+//   let count = 0;
+//   let n = grid.length;
+//   for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < grid[i].length; j++) {
+//       if (grid[i][j] < 0) count++;
+//     }
+//   }
+//   return count;
+// };
+
+// let grid = [
+//   [4, 3, 2, -1],
+//   [3, 2, 1, -1],
+//   [1, 1, -1, -2],
+//   [-1, -1, -2, -3]
+// ];
+// console.log(countNegatives(grid));
+
+////////////////// 06 ////////////////////
+
