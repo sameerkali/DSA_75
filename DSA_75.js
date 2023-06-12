@@ -549,14 +549,23 @@ const { LastPage, CodeSharp } = require("@material-ui/icons");
 //   }
 // };
 
-const nextGreatestLetter = (letters, target) => {
-  let set = new Set(letters);
-  for (let c of letters) {
-    if (c > target) return c;
-  }
-  return letters[0];
-};
+// const nextGreatestLetter = (letters, target) => {
+//   let set = new Set(letters);
+//   for (let c of letters) {
+//     if (c > target) return c;
+//   }
+//   return letters[0];
+// };
 
-let letters = ["a", "b", "c", "d"];
-let target = "a";
-console.log(nextGreatestLetter(letters, target));
+// let letters = ["a", "b", "c", "d"];
+// let target = "a";
+// console.log(nextGreatestLetter(letters, target));
+
+////////////////////////////// 12 June 2k23 Govind bhai ka question////////
+// let c = {
+//   greeting : "hai",
+// }
+// let d;
+// d = c;
+// // c.greeting = 'hello'
+// console.log(d.greeting);
