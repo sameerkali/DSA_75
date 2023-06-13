@@ -1,7 +1,5 @@
 // let array1 = ["a", "b", "c", null, "d"];
-// let array2 = ["v", "q", null, "x", "z"];
-
-const { LastPage, CodeSharp } = require("@material-ui/icons");
+// let array2 = ["v", "q", "x", "z"];
 
 // function fun1(array1, array2) {
 //   let map = {};
@@ -569,3 +567,5 @@ const { LastPage, CodeSharp } = require("@material-ui/icons");
 // d = c;
 // // c.greeting = 'hello'
 // console.log(d.greeting);
+
+////////////////////////////// 13 June 2k23 aaj man hi nhi kia question krne ka////////
