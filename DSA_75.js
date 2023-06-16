@@ -569,3 +569,5 @@
 // console.log(d.greeting);
 
 ////////////////////////////// 13 June 2k23 aaj man hi nhi kia question krne ka////////
+////////////////////////////// 14 June 2k23 aaj time nhi milaa questions krne ka////////
+////////////////////////////// 16 June 2k23 aaj time nhi milaa questions krne ka////////
