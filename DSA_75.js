@@ -571,3 +571,19 @@
 ////////////////////////////// 13 June 2k23 aaj man hi nhi kia question krne ka////////
 ////////////////////////////// 14 June 2k23 aaj time nhi milaa questions krne ka////////
 ////////////////////////////// 16 June 2k23 aaj time nhi milaa questions krne ka////////
+////////////////////////////// 19 June 2k23 aaj pura din waste kr dia par man nhi kia questions krne ka////////
+
+let isSubsequence = (s, t) => {
+  if (s.length > t.length) return false;
+  let subsequence = 0;
+  for (let i = 0; i < t.length; i++) {
+    if (s[subsequence] == t[i]) {
+      subsequence++;
+    }
+  }
+  return subsequence === s.length;
+};
+let stringA = "samee";
+let stringB = "sameer";
+if (isSubsequence(stringA, stringB)) console.log("Yes it is subSequence");
+else console.log("nhi hai");
