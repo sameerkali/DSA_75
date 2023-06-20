@@ -573,17 +573,40 @@
 ////////////////////////////// 16 June 2k23 aaj time nhi milaa questions krne ka////////
 ////////////////////////////// 19 June 2k23 aaj pura din waste kr dia par man nhi kia questions krne ka////////
 
-let isSubsequence = (s, t) => {
-  if (s.length > t.length) return false;
-  let subsequence = 0;
-  for (let i = 0; i < t.length; i++) {
-    if (s[subsequence] == t[i]) {
-      subsequence++;
+// let isSubsequence = (s, t) => {
+//   if (s.length > t.length) return false;
+//   let subsequence = 0;
+//   for (let i = 0; i < t.length; i++) {
+//     if (s[subsequence] == t[i]) {
+//       subsequence++;
+//     }
+//   }
+//   return subsequence === s.length;
+// };
+// let stringA = "samee";
+// let stringB = "sameer";
+// if (isSubsequence(stringA, stringB)) console.log("Yes it is subSequence");
+// else console.log("nhi hai");
+////////////////////////////// 20 June 2k23 aaj pura din waste kr dia par man nhi kia questions krne ka////////
+var nextGreatestLetter = function (letters, target) {
+  for (let i = 0; i <= letters.length-1; i++) {
+console.log(letters[i]);
+    if (letters[i] > target) {
+      if (letters[i] == target) {
+        return letters[i + 1];
+      }
     }
   }
-  return subsequence === s.length;
 };
-let stringA = "samee";
-let stringB = "sameer";
-if (isSubsequence(stringA, stringB)) console.log("Yes it is subSequence");
-else console.log("nhi hai");
+
+const nextGreatestLetter = (letters, target) => {
+  let set = new Set(letters);
+  for (let c of letters) {
+    if (c > target) return c;
+  }
+  return letters[0];
+};
+
+let letters = ["a", "b", "c", "d"];
+let target = "a";
+console.log(nextGreatestLetter(letters, target));
