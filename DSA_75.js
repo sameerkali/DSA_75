@@ -588,25 +588,27 @@
 // if (isSubsequence(stringA, stringB)) console.log("Yes it is subSequence");
 // else console.log("nhi hai");
 ////////////////////////////// 20 June 2k23 aaj pura din waste kr dia par man nhi kia questions krne ka////////
-var nextGreatestLetter = function (letters, target) {
-  for (let i = 0; i <= letters.length-1; i++) {
-console.log(letters[i]);
-    if (letters[i] > target) {
-      if (letters[i] == target) {
-        return letters[i + 1];
-      }
-    }
-  }
-};
+// var nextGreatestLetter = function (letters, target) {
+//   for (let i = 0; i <= letters.length-1; i++) {
+// console.log(letters[i]);
+//     if (letters[i] > target) {
+//       if (letters[i] == target) {
+//         return letters[i + 1];
+//       }
+//     }
+//   }
+// };
 
-const nextGreatestLetter = (letters, target) => {
-  let set = new Set(letters);
-  for (let c of letters) {
-    if (c > target) return c;
-  }
-  return letters[0];
-};
+// const nextGreatestLetter = (letters, target) => {
+//   let set = new Set(letters);
+//   for (let c of letters) {
+//     if (c > target) return c;
+//   }
+//   return letters[0];
+// };
 
-let letters = ["a", "b", "c", "d"];
-let target = "a";
-console.log(nextGreatestLetter(letters, target));
+// let letters = ["a", "b", "c", "d"];
+// let target = "a";
+// console.log(nextGreatestLetter(letters, target));
+
+////////////////////////////// 21 June 2k23 bhai maa kasam bilkull time nhi mil rahaa ////////
