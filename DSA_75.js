@@ -64,7 +64,7 @@
 
 // function maxProfit(prices) {
 //   let minPrice = Infinity;
-//   let maxProfit = 0;
+//   let maxProfit = -Infinity; // or 0
 
 //   for (let i = 0; i < prices.length; i++) {
 //     if (prices[i] < minPrice) {
@@ -85,17 +85,16 @@
 //                                    03 Contains Duplicate
 
 // let findDuplicate = (arr) => {
-//   let a = arr.length;
-//   let b = arr[0];
+//   let a = arr[0];
+//   let b = arr.length;
 //   for (let c = 0; c < arr.length; c++) {
-//     if (a == b) return true;
-//     a++;
-//     b--;
-//   }
+//     if (a === b) return true;
+//     a++,b--;
+//  }
 //   return false;
 // };
 
-// let arr = [9, 3, 10, 1, 5, 8, 12, 6, 7, 4, 8, -2, -3, 0]; //-- ans Duplicate not found --- wrong ans
+// let arr = [9, 3, 10, 1, 5, 8, 12, 6, 7, 4, 8, -2, 3, 0]; //-- ans Duplicate not found --- wrong ans
 // let duplicate = findDuplicate(arr);
 // if (duplicate) console.log("Duplicate found");
 // else console.log("Duplicate not found");
@@ -612,7 +611,25 @@
 // console.log(nextGreatestLetter(letters, target));
 
 ////////////////////////////// 21 June 2k23 bhai maa kasam bilkull time nhi mil rahaa ////////
-////////////////////////////// 22 Time hi nhi milaa vmro ////////
-////////////////////////////// 23 kuchh bhe ho jae kamse kam revision toh kr hi lunga aaj ////////
+////////////////////////////// 22 June 2k23 Time hi nhi milaa vmro ////////
+////////////////////////////// 23 June 2k23 kuchh bhe ho jae kamse kam revision toh kr hi lunga aaj ////////
 
 
+const countNegatives = (grid) => {
+  let count = 0;
+  let n = grid.length;
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < grid[i].length; j++) {
+      if (grid[i][j] < 0) count++;
+    }
+  }
+  return count;
+};
+
+let grid = [
+  [4, 3, 2, -1],
+  [3, 2, 1, -1],
+  [1, 1, -1, -2],
+  [-1, -1, -2, -3]
+];
+console.log(countNegatives(grid));
