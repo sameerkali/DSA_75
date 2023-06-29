@@ -633,3 +633,20 @@ let grid = [
   [-1, -1, -2, -3]
 ];
 console.log(countNegatives(grid));
+////////////////////////////// 29 June 2k23 kuchh bhe ho jae kamse kam revision toh kr hi lunga aaj ////////
+  let pre = 1;
+  let suff = 1;
+  let ans = -Infinity;
+  let n = arr.length;
+  for (let i = 0; i < n; i++) {
+    if (pre == 0) pre = 1;
+    if (suff == 0) suff = 1;
+
+    pre *= arr[i];
+    suff *= arr[n - i - 1];
+    ans = Math.max(ans, Math.max(pre, suff));
+  }
+  return ans;
+};
+let arr = [4, 3, 2, 1, 0, 4, 3, -2, -2];
+console.log(MaximumProductSubarray(arr));
