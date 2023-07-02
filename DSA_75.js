@@ -615,21 +615,41 @@
 ////////////////////////////// 23 June 2k23 kuchh bhe ho jae kamse kam revision toh kr hi lunga aaj ////////
 
 
-const countNegatives = (grid) => {
-  let count = 0;
-  let n = grid.length;
-  for (let i = 0; i < n; i++) {
-    for (let j = 0; j < grid[i].length; j++) {
-      if (grid[i][j] < 0) count++;
-    }
-  }
-  return count;
-};
+// const countNegatives = (grid) => {
+//   let count = 0;
+//   let n = grid.length;
+//   for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < grid[i].length; j++) {
+//       if (grid[i][j] < 0) count++;
+//     }
+//   }
+//   return count;
+// };
 
-let grid = [
-  [4, 3, 2, -1],
-  [3, 2, 1, -1],
-  [1, 1, -1, -2],
-  [-1, -1, -2, -3]
-];
-console.log(countNegatives(grid));
+// let grid = [
+//   [4, 3, 2, -1],
+//   [3, 2, 1, -1],
+//   [1, 1, -1, -2],
+//   [-1, -1, -2, -3]
+// ];
+// console.log(countNegatives(grid));
+
+
+/////////////////////////////////////////////////////2/7/23
+const MaximumProductSubarray = (arr) => {
+  let pre = 1;
+  let suff = 1;
+  let ans = -Infinity;
+  let n = arr.length;
+  for (let i = 0; i < n; i++) {
+    if (pre == 0) pre = 1;
+    if (suff == 0) suff = 1;
+
+    pre *= arr[i];
+    suff *= arr[n - i - 1];
+    ans = Math.max(ans, Math.max(pre, suff));
+  }
+  return ans;
+};
+let arr = [4, 3, 2, 1, 0, 4, 3, -2, -2];
+console.log(MaximumProductSubarray(arr));
