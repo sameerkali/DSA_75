@@ -661,3 +661,25 @@
 // console.log(countNegatives(grid));
 
 ////////////////////////////// 03 july 2k23 procrestration ////////
+var nextGreatestLetter = function (letters, target) {
+  for (let i = 0; i <= letters.length-1; i++) {
+console.log(letters[i]);
+    if (letters[i] > target) {
+      if (letters[i] == target) {
+        return letters[i + 1];
+      }
+    }
+  }
+};
+
+const nextGreatestLetter = (letters, target) => {
+  let set = new Set(letters);
+  for (let c of letters) {
+    if (c > target) return c;
+  }
+  return letters[0];
+};
+
+let letters = ["a", "b", "c", "d"];
+let target = "a";
+console.log(nextGreatestLetter(letters, target));
