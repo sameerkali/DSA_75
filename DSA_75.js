@@ -661,25 +661,72 @@
 // console.log(countNegatives(grid));
 
 ////////////////////////////// 03 july 2k23 procrestration ////////
-var nextGreatestLetter = function (letters, target) {
-  for (let i = 0; i <= letters.length-1; i++) {
-console.log(letters[i]);
-    if (letters[i] > target) {
-      if (letters[i] == target) {
-        return letters[i + 1];
-      }
-    }
-  }
-};
+// var nextGreatestLetter = function (letters, target) {
+//   for (let i = 0; i <= letters.length-1; i++) {
+// console.log(letters[i]);
+//     if (letters[i] > target) {
+//       if (letters[i] == target) {
+//         return letters[i + 1];
+//       }
+//     }
+//   }
+// };
 
-const nextGreatestLetter = (letters, target) => {
-  let set = new Set(letters);
-  for (let c of letters) {
-    if (c > target) return c;
-  }
-  return letters[0];
-};
+// const nextGreatestLetter = (letters, target) => {
+//   let set = new Set(letters);
+//   for (let c of letters) {
+//     if (c > target) return c;
+//   }
+//   return letters[0];
+// };
 
-let letters = ["a", "b", "c", "d"];
-let target = "a";
-console.log(nextGreatestLetter(letters, target));
+// let letters = ["a", "b", "c", "d"];
+// let target = "a";
+// console.log(nextGreatestLetter(letters, target));
+
+//////////////////////////////////// roadside coder array ////////////////////////////
+// "strict";
+// console.log('sameer')
+
+// [ARRAYS] ----------------------------------------------------------------------
+// Q1 find the secound largest element in array
+
+// testcases
+// arr = [12, 35, 1, 10, 34, 1];
+// arr = [10, 5, 10];
+
+// ----------------bruteForce  01
+// let secoundLargest = (arr) => {
+//   const allUnique = Array.from(new Set(arr));
+
+//   allUnique.sort((a, b) => b - a);
+
+//   if (allUnique.length >= 2) {
+//     return allUnique[1];
+//   } else {
+//     return -1;
+//   }
+// };
+// arr1 = [12, 35, 1, 10, 34, 1];
+// arr2 = [10, 5, 10];
+// console.log(secoundLargest(arr2));
+// time complexity O( n log n) -- because sorting in js inbuild is take O(nlogn) and that is the highrst in this question
+
+// Optimized solution
+
+// const secoundLargestOptimized = (arr) => {
+//   let largest = Number.NEGATIVE_INFINITY;
+//   let secoundLargest = Number.NEGATIVE_INFINITY;
+
+//   for (let i = 0; i <= arr.length; i++) {
+//     if (arr[i] > largest) {
+//       secoundLargest = largest;
+//       largest = arr[i];
+//     } else if (arr[i] != largest && arr[i] > secoundLargest) {
+//       secoundLargest = arr[i];
+//     }
+//   }
+//   return secoundLargest;
+// };
+// arr3 = [12, 35, 1, 10, 34, 1];
+// console.log(secoundLargestOptimized(arr3));
