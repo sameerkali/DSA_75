@@ -155,6 +155,33 @@ const isAnagram = (s, t) => {
 
 // console.log(isAnagram("sameer", "reemas"));
 
-
 // BLOG LINK
 // https://sameerkali.hashnode.dev/data-structure-string-in-javascript-frontend-interview-helper
+
+// Hoasting Ex01
+// function x() {
+//   var a = 7;
+//   function y() {
+//     console.log(a);
+//   }
+//   return y;
+// }
+
+// var z = x();
+// console.log(z);
+// z();
+
+// Hoasting Ex02
+
+let x = () => {
+  let a = 7;
+  const y = () => {
+    console.log(a);
+  };
+  a = 100
+  return y;
+};
+
+let z = x();
+console.log(z);
+z();
