@@ -173,15 +173,17 @@ const isAnagram = (s, t) => {
 
 // Hoasting Ex02
 
-let x = () => {
-  let a = 7;
-  const y = () => {
-    console.log(a);
-  };
-  a = 100
-  return y;
-};
+// let x = () => {
+//   let a = 7;
+//   const y = () => {
+//     console.log(a);
+//   };
+//   a = 100
+//   return y;
+// };
 
-let z = x();
-console.log(z);
-z();
+// let z = x();
+// console.log(z);
+// z();
+
+

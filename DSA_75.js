@@ -82,6 +82,33 @@
 // let profit = maxProfit(stockPrices);
 // console.log("Maximum profit: " + profit);
 
+
+// working code 
+// const maxProfit = (prices) => {
+//     if (prices.length < 2) {
+//       // There must be at least two prices to make a profit.
+//       return 0;
+//     }
+  
+//     let minPrice = prices[0]; // Initialize the minimum price to the first day's price.
+//     let maxProfit = 0; // Initialize the maximum profit to zero.
+  
+//     for (let i = 1; i < prices.length; i++) {
+//       // Calculate the potential profit if we sell on the current day.
+//       const potentialProfit = prices[i] - minPrice;
+  
+//       // Update maxProfit if the potential profit is greater.
+//       maxProfit = Math.max(maxProfit, potentialProfit);
+  
+//       // Update minPrice if the current price is lower than the previous minimum.
+//       minPrice = Math.min(minPrice, prices[i]);
+//     }
+  
+//     return maxProfit;
+//   };
+  
+
+
 //                                    03 Contains Duplicate
 
 // let findDuplicate = (arr) => {
@@ -614,7 +641,6 @@
 ////////////////////////////// 22 June 2k23 Time hi nhi milaa vmro ////////
 ////////////////////////////// 23 June 2k23 kuchh bhe ho jae kamse kam revision toh kr hi lunga aaj ////////
 
-
 // const countNegatives = (grid) => {
 //   let count = 0;
 //   let n = grid.length;
@@ -633,7 +659,6 @@
 //   [-1, -1, -2, -3]
 // ];
 // console.log(countNegatives(grid));
-
 
 /////////////////////////////////////////////////////2/7/23
 // const MaximumProductSubarray = (arr) => {
@@ -730,3 +755,88 @@
 // };
 // arr3 = [12, 35, 1, 10, 34, 1];
 // console.log(secoundLargestOptimized(arr3));
+
+// ============ 2sum =============== 10/09/2023
+
+// var twoSum = function (nums, target) {
+//     let start = nums[0];
+//     let end = nums.length - 1;
+//     for (let i = 0; i < nums.length; i++){
+//         if(nums[start] + nums[end] === target){
+//             return [nums[start],nums[end]]
+//             start++;
+//             end--;
+//         }else{
+//             return false;
+//         }
+
+//     }
+//   };
+// var twoSum = function (nums, target) {
+//     let ans = []
+//     for (let i = 0; i < nums.length; i++) {
+//         for (let j = i + 1; j < nums.length; j++) {
+//             if (nums[i] + nums[j] === target) {
+//                 ans.push(i);
+//                 ans.push(j);
+//                 return ans;
+//             }
+//         }
+//     }
+//         return ans;
+// };
+
+// let nums = [2, 3, 4, 5, 8];
+// console.log(twoSum(nums, 5));
+
+//121. Best Time to Buy and Sell Stock
+
+// const maxProfit = (p) => {
+//     let profit = [];
+
+//     for (let i = 0; i < p.length; i++) {
+//         for (let j = 0; j <= p.length; j++) {
+//             profit.push(i + j)
+//         }
+//     }
+//     console.log(profit)
+
+//     let ans = 0;
+//     for (let i = 0; i < profit.length; i++) {
+//         if (profit[i] > ans) {
+//             ans = profit[i]
+//         }
+//     }
+//     return ans;
+
+// };
+
+// let nums = [7,1,5,3,6,4]
+// console.log(maxProfit(nums));
+
+
+// correct code (chatGpt)
+// const maxProfit = (prices) => {
+//     if (prices.length < 2) {
+//       // There must be at least two prices to make a profit.
+//       return 0;
+//     }
+  
+//     let minPrice = prices[0]; // Initialize the minimum price to the first day's price.
+//     let maxProfit = 0; // Initialize the maximum profit to zero.
+  
+//     for (let i = 1; i < prices.length; i++) {
+//       // Calculate the potential profit if we sell on the current day.
+//       const potentialProfit = prices[i] - minPrice;
+  
+//       // Update maxProfit if the potential profit is greater.
+//       maxProfit = Math.max(maxProfit, potentialProfit);
+  
+//       // Update minPrice if the current price is lower than the previous minimum.
+//       minPrice = Math.min(minPrice, prices[i]);
+//     }
+  
+//     return maxProfit;
+//   };
+  // let nums = [7,1,5,3,6,4]
+// console.log(maxProfit(nums));
