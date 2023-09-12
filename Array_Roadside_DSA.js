@@ -1,5 +1,3 @@
-const { Maximize } = require("@material-ui/icons");
-
 /* Question 1: Truncate the text
  Write a function called truncate that checks the length of a given string str, and if
  it surpasses a specified maximum length, maxlength, it replaces the end of the string
@@ -32,31 +30,22 @@ const maxLenght = 9;
 Solution :
 */
 
-// Define a function to check if a number is a palindrome
 const PalindromeNumber = (num) => {
-  // Convert the number to a string for easier character comparison
   const numString = num.toString();
-
-  // Initialize pointers for the leftmost and rightmost characters in the string
   let leftPointer = 0;
   let rightPointer = numString.length - 1;
 
-  // Iterate through the string until the pointers cross each other
   while (leftPointer < rightPointer) {
-    // Compare characters at the current pointers
     if (numString[leftPointer] !== numString[rightPointer]) {
-      return false; // If characters don't match, it's not a palindrome
+      return false;
     }
-    // Move the pointers towards each other
     leftPointer++;
     rightPointer--;
   }
 
-  // If the loop completes without returning false, the number is a palindrome
   return true;
 };
 
-// Test the PalindromeNumber function with a number
 let something = 424;
 // console.log(PalindromeNumber(something)); // Output: true
 
@@ -185,5 +174,3 @@ const isAnagram = (s, t) => {
 // let z = x();
 // console.log(z);
 // z();
-
-

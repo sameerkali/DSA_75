@@ -203,7 +203,7 @@
 
 //                                    05 Product of Array Except Self	 //////////////////////////////////////
 
-// function productExceptSelf(nums) {          right answer chatGPT
+// function productExceptSelf(nums) {          //right answer chatGPT
 //     const n = nums.length;
 //     const output = new Array(n);
 
@@ -301,20 +301,22 @@
 
 //method 2 ( not working )
 
-// let name1 = "sameer faridi";
+// let name = "sameer faridi";
+// let name1 = name.prototype.trim();
+// console.log(name1)
 // let a = 0;
-// let b = name1.length;
+// let b = 1;
 // for (let i = 0; i < name1.length; i++) {
 //   if (a == b) console.log("duplicates are : " + b);
 
 //   a++;
-//   b--;
+//   b++;
 // }
 
 //method 3 ( working )
 
-// let name1 = ["sa", "saa", "ssameer", "sameer", "sam", "sa"];
 // let name1 = "sameer faridi";
+// let name1 = ["sa", "saa", "ssameer", "sameer", "sam", "sa"];
 // let duplicates = new Set();
 // for (let i = 0; i < name1.length; i++) {
 //   let currentChar = name1[i];
@@ -330,9 +332,9 @@
 // duplicates.values(currentChar);
 // duplicates.forEach(currentChar);
 // use [] for store data in arrays
-//EX--
-//let arr = [1,2,3,4,5,56,67,32,7,8,8,12,2]
-//let duplicates = [ ...new Set(arr)];
+// EX--
+// let arr = [1,2,3,4,5,56,67,32,7,8,8,12,2]
+// let duplicates = [ ...new Set(arr)];
 
 //////////////////////////////////// 05 anagram or not	 ////////////////////////////////////////////////////////////////
 
@@ -350,6 +352,7 @@
 // method 02 working
 // let str1 = "sameer";
 // let str2 = "measer";
+// console.log(str1.split(""));
 // let arr1 = str1.split("").sort().join('');
 // let arr2 = str2.split("").sort().join('');
 // if (arr1 === arr2) {
@@ -472,7 +475,7 @@
 
 //////////////////////////////////// 05 Reverse string///////////////////////////////////////////////////////////////
 
-// it is correct on leetcode but here it is showing wring answer
+// it is correct on leetcode but here it is showing wr0ng answer
 
 // let stringForReverse = "sameer";
 // let l = 0;
