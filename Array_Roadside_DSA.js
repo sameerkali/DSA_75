@@ -147,36 +147,60 @@ const isAnagram = (s, t) => {
 // BLOG LINK
 // https://sameerkali.hashnode.dev/data-structure-string-in-javascript-frontend-interview-helper
 
-// Hoasting Ex01
-// function x() {
-//   var a = 7;
-//   function y() {
-//     console.log(a);
+///////////////////////// Revisit /////////////////////////////////////
+
+/* Question 1: Truncate the text
+ Write a function called truncate that checks the length of a given string str, and if
+ it surpasses a specified maximum length, maxlength, it replaces the end of the string
+ with the ellipsis character so that the length matches the maximum length
+
+*/
+
+// const truncate2 = (str, len) => {
+//   // let stringWithoutSpaces1 = str.trim();
+//   // let stringWithoutSpaces = stringWithoutSpaces1.replaceAll(" ", "");
+//   // console.log(stringWithoutSpaces.slice(0, len) + ".....");
+
+//   if (str.length > len) {
+//     console.log(str.slice(0, len) + "...");
+//   } else {
+//     console.log(str);
 //   }
-//   return y;
-// }
-
-// var z = x();
-// console.log(z);
-// z();
-
-// Hoasting Ex02
-
-// let x = () => {
-//   let a = 7;
-//   const y = () => {
-//     console.log(a);
-//   };
-//   a = 100
-//   return y;
 // };
 
-// let z = x();
-// console.log(z);
-// z();
-// let z = x();
-// console.log(z);
-// z();
-// let z = x();
-// console.log(z);
-// z();
+// let str = "hii i am sameer       ";
+// let len = 10;
+// truncate2(str, len);
+
+/*  Q2: Palindrome Number, 
+   Input: 121 -> True
+   Input: 123 -> False 
+
+Solution :
+*/
+
+// const whatIsPalindrome = (pal) => {
+
+//   return pla < 0 ? false : pal.toString().split('').reverse().join("");
+
+// };
+
+// var whatIsPalindrome = (a) => {
+//   const s = a.toString().trim().replaceAll(' ','')
+//   return s.split("").reverse().join("") === s ? true : false;
+// };
+
+
+
+
+
+// split == from
+
+const whatIsPalindrome = (s) => {
+  let newS = s.split('').reduce((a,b) => b+a ,"")
+  console.log(newS)
+  return s === newS ? true : false;
+}
+
+let Palindrome2 = "sameereemas";
+console.log(whatIsPalindrome(Palindrome2));
