@@ -204,3 +204,5 @@ const whatIsPalindrome = (s) => {
 
 let Palindrome2 = "sameereemas";
 console.log(whatIsPalindrome(Palindrome2));
+
+ghjkl;jhhjkl;
