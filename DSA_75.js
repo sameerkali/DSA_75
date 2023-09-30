@@ -82,32 +82,29 @@
 // let profit = maxProfit(stockPrices);
 // console.log("Maximum profit: " + profit);
 
-
-// working code 
+// working code
 // const maxProfit = (prices) => {
 //     if (prices.length < 2) {
 //       // There must be at least two prices to make a profit.
 //       return 0;
 //     }
-  
+
 //     let minPrice = prices[0]; // Initialize the minimum price to the first day's price.
 //     let maxProfit = 0; // Initialize the maximum profit to zero.
-  
+
 //     for (let i = 1; i < prices.length; i++) {
 //       // Calculate the potential profit if we sell on the current day.
 //       const potentialProfit = prices[i] - minPrice;
-  
+
 //       // Update maxProfit if the potential profit is greater.
 //       maxProfit = Math.max(maxProfit, potentialProfit);
-  
+
 //       // Update minPrice if the current price is lower than the previous minimum.
 //       minPrice = Math.min(minPrice, prices[i]);
 //     }
-  
+
 //     return maxProfit;
 //   };
-  
-
 
 //                                    03 Contains Duplicate
 
@@ -817,29 +814,37 @@
 // let nums = [7,1,5,3,6,4]
 // console.log(maxProfit(nums));
 
-
 // correct code (chatGpt)
 // const maxProfit = (prices) => {
 //     if (prices.length < 2) {
 //       // There must be at least two prices to make a profit.
 //       return 0;
 //     }
-  
+
 //     let minPrice = prices[0]; // Initialize the minimum price to the first day's price.
 //     let maxProfit = 0; // Initialize the maximum profit to zero.
-  
+
 //     for (let i = 1; i < prices.length; i++) {
 //       // Calculate the potential profit if we sell on the current day.
 //       const potentialProfit = prices[i] - minPrice;
-  
+
 //       // Update maxProfit if the potential profit is greater.
 //       maxProfit = Math.max(maxProfit, potentialProfit);
-  
+
 //       // Update minPrice if the current price is lower than the previous minimum.
 //       minPrice = Math.min(minPrice, prices[i]);
 //     }
-  
+
 //     return maxProfit;
 //   };
-  // let nums = [7,1,5,3,6,4]
+// let nums = [7,1,5,3,6,4]
 // console.log(maxProfit(nums));
+
+const whatIsPalindrome = (s) => {
+  let newS = s.split("").reduce((a, b) => b + a, "");
+  console.log(newS);
+  return s === newS ? true : false;
+};
+
+let Palindrome2 = "sameereemas";
+console.log(whatIsPalindrome(Palindrome2));
