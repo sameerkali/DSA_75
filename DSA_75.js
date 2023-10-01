@@ -840,11 +840,3 @@
 // let nums = [7,1,5,3,6,4]
 // console.log(maxProfit(nums));
 
-const whatIsPalindrome = (s) => {
-  let newS = s.split("").reduce((a, b) => b + a, "");
-  console.log(newS);
-  return s === newS ? true : false;
-};
-
-let Palindrome2 = "sameereemas";
-console.log(whatIsPalindrome(Palindrome2));
