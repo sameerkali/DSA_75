@@ -8,7 +8,10 @@
 //       const item = array1[index];
 //       map[item] = true;
 //     }
-//   }
+//  }
+[index2]]) {
+//       return true;
+
 
 //   for (let index2 = 0; index2 < array2.length; index2++) {
 //     if (map[array2[index2]]) {
