@@ -9,7 +9,7 @@
 //       map[item] = true;
 //     }
 //  }
-[index2]]) {
+// [index2]]) {
 //       return true;
 
 
