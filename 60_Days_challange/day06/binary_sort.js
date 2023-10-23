@@ -7,7 +7,7 @@ const search = (arr, t) => {
     if (t < arr[mid]) RI = mid - 1;
     else LI = mid;
   }
-  return arr[LI] == t ? LI : -1;
+  return arr[LI] === t ? LI : -1;
 };
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
