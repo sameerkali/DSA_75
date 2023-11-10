@@ -5,9 +5,7 @@
 var threeSum = function(nums) {
     const res = [];
     nums.sort((a, b) => a - b);
-    
-    for (let i = 0; i < nums.length - 2; i++) {
-        if (i === 0 || nums[i] !== nums[i-1]) {
+    0 || nums[i] !== nums[i-1]) {
             let lo = i + 1, hi = nums.length - 1, sum = 0 - nums[i];
             while (lo < hi) {
                 if (nums[lo] + nums[hi] === sum) {
