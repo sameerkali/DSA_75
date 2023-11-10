@@ -1,4 +1,4 @@
-]
+
  */
 var threeSum = function(nums) {
     const res = [];
