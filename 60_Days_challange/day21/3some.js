@@ -20,9 +20,7 @@ var threeSum = function(nums) {
                     lo++;
                 } else {
                     hi--;
-                }
-            }
-        }
+             
     
     
     return res;
