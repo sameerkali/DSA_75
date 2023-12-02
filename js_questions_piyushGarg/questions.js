@@ -24,6 +24,9 @@ myFunc();
 */
 
 //! Question 04
+const add = async()=> {
+
+}
 console.log("1")
 console.log("2")
 console.log("3")
@@ -31,6 +34,7 @@ console.log("4")
 console.log("5")
 setTimeout(()=> console.log(6), 0)
 Promise.resolve().then(console.log("7"));
+// Promise.resolve(7).then(console.log);
 
 console.log("8")
 console.log("9")
