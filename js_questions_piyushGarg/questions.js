@@ -11,6 +11,7 @@
 // var age = 30;
 // // let age = 30; //error || also there is a temporal dead zone
 //! Question 03
+/*
 myFunc();
 var myFunc = function () {
   console.log("first");
@@ -20,8 +21,20 @@ function myFunc() {
   console.log("secound");
 }
 myFunc();
+*/
 
 //! Question 04
+console.log("1")
+console.log("2")
+console.log("3")
+console.log("4")
+console.log("5")
+setTimeout(()=> console.log(6), 0)
+Promise.resolve().then(console.log("7"));
+
+console.log("8")
+console.log("9")
+
 //! Question 05
 //! Question 06
 //! Question 07
