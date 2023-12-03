@@ -40,7 +40,3 @@ console.log("8")
 console.log("9")
 
 //! Question 05
-//! Question 06
-//! Question 07
-//! Question 08
-//! Question 09
