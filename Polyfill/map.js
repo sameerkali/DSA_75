@@ -1,4 +1,5 @@
-Array.prototype.sap = function (callback) { // i name sap because of testind code
+Array.prototype.sap = function (callback) {
+  // i name sap because of testind code
   const result = [];
   for (let i = 0; i < this.length; i++) {
     result.push(callback(this[i], i, this));
