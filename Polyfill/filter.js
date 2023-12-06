@@ -7,6 +7,8 @@ Array.prototype.filters = function (callback) {
   }
   return result;
 };
-    const arr = [1, 2, 3, 4, 5, 6, 7];
-    const result = arr.filters((e) => e % 2 === 0);
-    console.log(result);
+const arr = [1, 2, 3, 4, 5, 6, 7];
+const result = arr.filters((e) => e % 2 === 0);
+console.log(result);
+
+

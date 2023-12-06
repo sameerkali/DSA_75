@@ -130,7 +130,7 @@ const checkAsync = async () => {
 //! video reference in casee of revesion (async await | Namaste JavaScript - Season 02 - Ep 04) timestamp: 34:40 - 40:40
 
 // another example
-const api_url = "https://api.github.com/users/sameerkali";
+const api_url = "htts://api.github.com/users/sameerkali";
 
 const apicall = async () => {
   try {
