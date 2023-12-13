@@ -12,7 +12,6 @@
 // [index2]]) {
 //       return true;
 
-
 //   for (let index2 = 0; index2 < array2.length; index2++) {
 //     if (map[array2[index2]]) {
 //       return true;
@@ -842,3 +841,100 @@
 //   };
 // let nums = [7,1,5,3,6,4]
 // console.log(maxProfit(nums));
+
+//! Practice js string and array questions Date: 13-12-2023
+
+//Reverse a String:1
+let str = "sameer";
+
+const reverse = (str) => {
+  return str.split("").reverse().join("");
+};
+// console.log(reverse(str));
+
+// Check for Palindrome:2
+let pal = "samas";
+
+const palindrome = (str) => {
+  return str.split("").reverse().join("") === str;
+};
+// console.log(palindrome(pal));
+
+// Find the Longest Word:3
+
+const words = ["sameer", "samas", "lls", "sdfsdfsdfsdf", "sa"];
+
+const checkLongestWord = (words) => {
+  const lengthOfWords = [];
+  words.forEach((word) => lengthOfWords.push(word.length));
+
+  const sorted = lengthOfWords.sort();
+
+  return sorted[0];
+};
+// console.log(checkLongestWord(words));
+
+//Count Vowels:4
+const vowels = "hello world";
+const countVowels = (vowels) => {
+  let vowelsLength = vowels.match(/[aeiou]/gi);
+  return vowelsLength ? vowelsLength.length : 0;
+};
+// console.log(countVowels(vowels));
+
+// Sum of Array Elements:5
+
+const elements = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const countElement = (elements) => {
+  let additionOfElements = 0;
+  for (let i = 0; i < elements.length; i++) {
+    additionOfElements = additionOfElements + elements[i];
+  }
+  return additionOfElements;
+};
+
+// console.log(countElement(elements));
+
+// Find Maximum and Minimum in an Array:6
+const elements2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const findThelargestAndSmallest = (elements2) => {
+  const sortedElements = elements2.slice().sort((a, b) => a - b);
+  let min = sortedElements[0];
+  let max = sortedElements[sortedElements.length - 1];
+  return [min, max];
+};
+const findThelargestAndSmallest2 = (elements2) => {
+  let max = Math.max(...elements);
+  let min = Math.min(...elements);
+  return [min, max];
+};
+// console.log(findThelargestAndSmallest2(elements2));
+// console.log(findThelargestAndSmallest(elements2));
+
+//Remove Duplicates from an Array:7
+const elements3 = [1, 4, 4, 5, 6, 5, 6, 10];
+
+const removeDuplicatesFromArray = (elements3) => {
+  return [...new Set(elements3)];
+};
+const removeDuplicatesFromArray2 = (elements3) => {
+  let unique = [];
+  for (let i = 0; i < elements3.length; i++) {
+    if (!unique.includes(elements3[i])) {
+      unique.push(elements3[i]);
+    }
+  }
+  return unique;
+};
+// console.log(removeDuplicatesFromArray(elements3));
+// console.log(removeDuplicatesFromArray2(elements3));
+
+//Check if Array is Sorted:8
+
+const elements4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+
+const checkSorted = (elements4) => {
+  let check = elements4.slice().sort((a,b) => a-b);
+  return JSON.stringify(check) === JSON.stringify(elements4);
+};
+// console.log(checkSorted(elements4));
