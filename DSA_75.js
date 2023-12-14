@@ -35,7 +35,7 @@
 //   for (let j = i; j <= element.length; j++) {
 //     if (element[i] == key - element[j]) {
 //       found = true;
-//       console.log("found at" + "[" + i + "," + j + "]");
+//       console.log(key + " " + " " + "found at" + "[" + i + "," + j + "]");
 //       break;
 //     }
 //   }
@@ -45,21 +45,21 @@
 //                                    02 Best Time to Buy and Sell Stock //////////////////////////////////////
 
 // my solution O(n^2)
-// let stocks = [1, 3, 10, 5, 2, 6, 7, 4, 8, 9];
-// let profit = [];
+let stocks = [1, 3, 10, 5, 2, 6, 7, 4, 8, 9];
+let profit = [];
 
-// for (let i = 0; i < stocks.length; i++) {
-//   for (let j = i; j <= stocks.length; j++) {
-//     profit.push(stocks[i] + stocks[j]);
-//   }
-// }
-// // console.log(profit);
-// let mainProfit = 0;
-// for (let i = 0; i < profit.length; i++) {
-//   if (profit[i] > mainProfit) {
-//     mainProfit = profit[i]
-//   }
-// }
+for (let i = 0; i < stocks.length; i++) {
+  for (let j = i; j <= stocks.length; j++) {
+    profit.push(stocks[i] + stocks[j]);
+  }
+}
+// console.log(profit);
+let mainProfit = 0;
+for (let i = 0; i < profit.length; i++) {
+  if (profit[i] > mainProfit) {
+    mainProfit = profit[i]
+  }
+}
 // console.log("the mazimum profit you make in this case : " + mainProfit);
 
 // optimised code O(n)
@@ -934,7 +934,7 @@ const removeDuplicatesFromArray2 = (elements3) => {
 const elements4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
 const checkSorted = (elements4) => {
-  let check = elements4.slice().sort((a,b) => a-b);
+  let check = elements4.slice().sort((a, b) => a - b);
   return JSON.stringify(check) === JSON.stringify(elements4);
 };
 // console.log(checkSorted(elements4));
