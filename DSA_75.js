@@ -938,3 +938,11 @@ const checkSorted = (elements4) => {
   return JSON.stringify(check) === JSON.stringify(elements4);
 };
 // console.log(checkSorted(elements4));
+
+//Count Vowels:9
+const vowels2 = "hello world";
+const countVowels2 = (vowels) => {
+  let vowelsLength = vowels.match(/[aeiou]/gi);
+  return vowelsLength ? vowelsLength.length : 0;
+};
+// console.log(countVowels2(vowels2));
