@@ -45,4 +45,4 @@ function rangeOfNumbers(startIndx, endIndx) {
     return numbers;
   }
 }
-console.log(rangeOfNumbers(1, 5));
+// console.log(rangeOfNumbers(1, 5));
