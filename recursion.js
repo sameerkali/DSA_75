@@ -27,10 +27,3 @@ function multiply(arr) {
 }
 // console.log(multiply([1, 2, 3, 4]));
 
-//! factorial  n=5 -> 5*4*3*2*1
-
-function factorial(n) {
-  if (n === 0) return 1;
-  return n * factorial(n - 1);
-}
-console.log(factorial(5));
