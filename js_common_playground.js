@@ -181,8 +181,24 @@ myFunction();
 
 
 
-///////////////////////////////////////////////////
+//! interview questions with prakhar 
 
+// console.log([] == ![]); //t
+// console.log(NaN === NaN); // f
+// console.log(2 + true - false +6); // 9/
+
+// function test(){
+//   console.log("asnwer1");
+//   setTimeout((x) => {
+//     console.log(x);
+    
+//   }, 1000);
+//   console.log("true");
+
+
+// }
+// console.log("answer2");
+// test()
 
 
 
