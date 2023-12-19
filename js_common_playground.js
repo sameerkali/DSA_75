@@ -142,4 +142,74 @@ const apicall = async () => {
     console.log("error in fetch", error);
   }
 };
-apicall();
+// apicall();
+
+
+
+//* hoasting 
+// console.log(testfunc)
+// let test1 = "test1"
+// var test1 = "test1"
+
+// function testfunc(){
+//   return 5
+// }
+
+
+function myFunction() {
+  // var variable is function-scoped
+  var myVar = 1;
+  console.log(myVar); // 1
+
+  // let variable is block-scoped
+  {
+    let myLetVar = 2;
+    console.log(myLetVar); // 2
+  }
+  // console.log(myLetVar); // ReferenceError: myLetVar is not defined
+
+  // const variable is block-scoped
+  {
+    const myConstVar = 3;
+    console.log(myConstVar); // 3
+  }
+  // console.log(myConstVar); // ReferenceError: myConstVar is not defined
+}
+
+myFunction();
+
+
+
+
+///////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
