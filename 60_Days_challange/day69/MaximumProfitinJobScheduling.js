@@ -1,18 +1,6 @@
-/**
- * @param {number[]} startTime
- * @param {number[]} endTime
- * @param {number[]} profit
- * @return {number}
- */
+
 var jobScheduling = function(startTime, endTime, profit) {
-    /*
-    Approach: 
-    We can have a single array jobs with all the information start,end and profit.
-    Then sort this array by start time.
-    Now, we can use simple backtracking with memoization.
-    In each step we can either take the current job or leave it.
-    We if take the current job then the next possible index will be the index of the job which is starting after endTime of the current job.  To find the next possible index, we can use binary search. 
-    */
+   
     let jobs=[],cache=[];
     for(let i=0;i<startTime.length;i++){
         jobs.push([startTime[i], endTime[i], profit[i]]);
