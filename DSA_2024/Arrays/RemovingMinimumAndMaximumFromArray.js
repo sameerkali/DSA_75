@@ -12,6 +12,8 @@
 // const array01 = [2, 10, 7, 5, 4, 1, 8, 6];
 // console.log(minimumDeletions(array01));
 
+
+//! method two
 const minimumDeletions = (nums) => {
   let minimum = Math.max(...nums);
   let maximum = Math.min(...nums);
