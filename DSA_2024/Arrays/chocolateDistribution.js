@@ -26,6 +26,6 @@ function findMinDiff(A, N, M) {
     return minDiff;
   }
   
-  let A = [3, 4, 1, 9, 56, 7, 9, 12];
-  console.log(findMinDiff(A, 8,5));
+  // let A = [3, 4, 1, 9, 56, 7, 9, 12];
+  // console.log(findMinDiff(A, 8,5));
   
