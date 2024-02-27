@@ -9,4 +9,6 @@ const missingNumber  = (array,n)=> {
 
 let arr = [1,2,3,5]
 let n = 5
+
 console.log(missingNumber(arr, n))
+
