@@ -3,6 +3,7 @@
 // console.log(a.map((i)=> i%2))
 // console.log(a.filter((i)=> i%2))
 
+
 var a = 2;
 function func() {
   var a = 3;
