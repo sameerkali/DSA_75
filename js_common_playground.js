@@ -215,9 +215,9 @@ function myFunction() {
 
 const test = typeof(NaN)
 const test2 = 123
-{
-test == test2 ? console.log("not equal") :   console.log("equal")
-}
+
+test == test2 ? console.log(" equal") :   console.log(" not equal")
+
 
 
 
