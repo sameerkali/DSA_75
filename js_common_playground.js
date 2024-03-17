@@ -176,7 +176,7 @@ function myFunction() {
   // console.log(myConstVar); // ReferenceError: myConstVar is not defined
 }
 
-myFunction();
+// myFunction();
 
 
 
@@ -217,6 +217,10 @@ myFunction();
 // const test2 = 123
 
 // test == test2 ? console.log(" equal") :   console.log(" not equal")
+const test = typeof(NaN)
+const test2 = 123
+
+test == test2 ? console.log(" equal") :   console.log(" not equal")
 
 
 
