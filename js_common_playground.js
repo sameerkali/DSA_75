@@ -204,6 +204,19 @@ myFunction();
 
 
 
+// const sarray = [1, 2, 3, 4, 5]
+// const barray = [1, 2, 3, 4, [12,22,33,33, [78,1,2,3,4, [22444]]],5]
+// const bb = barray.toString()
+// bb.split("  ")
+// console.log(bb, "*****")
+// console.log(sarray.toString())
+
+
+
+// const test = typeof(NaN)
+// const test2 = 123
+
+// test == test2 ? console.log(" equal") :   console.log(" not equal")
 
 
 
