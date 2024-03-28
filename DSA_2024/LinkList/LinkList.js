@@ -17,7 +17,3 @@
       }
   }
 
-  // const linklist2 = new linklist();
-  // linklist.addFirst(2);
-  // linklist.addFirst(3);
-  // console.log(linklist2)
