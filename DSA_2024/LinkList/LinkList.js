@@ -38,24 +38,26 @@ class Node {
 }
 
 class LinkedList {
-  constructor() {
+  constructor(){
     this.head = null;
   }
 
-  addFirst(data) {
+
+  addFirst(data){
     if (this.head == null) {
-      this.head = new Node(data);
-    } else {
+      this.head = new Node(data)
+    }else{
       let temp = new Node(data);
       temp.next = this.head;
-      this.head = temp;
+      this.head = temp; 
     }
   }
 
-  displayAll() {
-    while (this.head != null) {
+  
+  displayAll(){
+    while(this.head != null){
       console.log(this.head.data);
-      this.head = this.head.next;
+      this.head = this.head.next
     }
   }
 }
