@@ -30,8 +30,6 @@
 // a.addFirst(2)
 // a.addFirst(1)
 
-
-
 //! secound
 // class Node {
 //   constructor(data) {
@@ -45,18 +43,16 @@
 //     this.head = null;
 //   }
 
-
 //   addFirst(data){
 //     if (this.head == null) {
 //       this.head = new Node(data)
 //     }else{
 //       let temp = new Node(data);
 //       temp.next = this.head;
-//       this.head = temp; 
+//       this.head = temp;
 //     }
 //   }
 
-  
 //   displayAll(){
 //     while(this.head != null){
 //       console.log(this.head.data);
@@ -73,12 +69,7 @@
 
 // a.displayAll();
 
-
-
-// //! third 
-
-
-
+// //! third
 
 // class Node{
 //   constructor(data){
@@ -115,47 +106,87 @@
 // list.addFirst(2)
 // list.Display()
 
-
 //* fourth
 
-class Node{
-  constructor(data){
+// class Node{
+//   constructor(data){
+//     this.data = data;
+//     this.next = null;
+//   }
+// }
+// class LinkedList{
+//   constructor(){
+//     this.head = null;
+//   }
+//   addFirst(data){
+//     if(this.head == null){
+//       this.head = new Node(data)
+//     }else{
+//       let temp = new Node(data);
+//       temp.next = this.head
+//       this.head = temp
+//     }
+//   }
+//   displayAll(){
+//     while(this.head != null){
+//       console.log(this.head.data)
+//       this.head = this.head.next;
+//     }
+//   }
+//   removeFirst(){
+//     if(this.head === null){
+//       return
+//     }
+//     this.head = this.head.next;
+//   }
+//   addlast(){
+
+//   }
+// }
+// let a = new LinkedList();
+// a.addFirst(3)
+// a.addFirst(2)
+// a.addFirst(1)
+// a.removeFirst()
+// a.displayAll()
+
+//! fifth
+
+class Node {
+  constructor(data) {
     this.data = data;
     this.next = null;
   }
 }
-class LinkedList{
-  constructor(){
+class LinkedList {
+  constructor() {
     this.head = null;
   }
-  addFirst(data){
-    if(this.head == null){
-      this.head = new Node(data)
-    }else{
+  addFirst(data) {
+    if (this.head == null) {
+      this.head = new Node(data);
+    } else {
       let temp = new Node(data);
-      temp.next = this.head
-      this.head = temp
-    }
-  }
-  displayAll(){
-    while(this.head != null){
-      console.log(this.head.data)
-      this.head = this.head.next;
+      temp.next = this.head;
+      this.head = temp;
     }
   }
   removeFirst(){
-    if(this.head === null){
-      return
-    } 
+    if(this.head == null) return
     this.head = this.head.next;
   }
-  addlast(){
-    
+
+  displayAll() {
+    while (this.head != null) {
+      console.log(this.head.data);
+      this.head = this.head.next;
+    }
   }
 }
+
 let a = new LinkedList();
-a.addFirst(3)
-a.addFirst(2)
-a.addFirst(1)
-a.removeFirst()
-a.displayAll()
+a.addFirst(3);
+a.addFirst(2);
+a.addFirst(1);
+a.removeFirst();
+a.displayAll();
