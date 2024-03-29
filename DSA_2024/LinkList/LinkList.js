@@ -143,9 +143,19 @@ class LinkedList{
       this.head = this.head.next;
     }
   }
+  removeFirst(){
+    if(this.head === null){
+      return
+    } 
+    this.head = this.head.next;
+  }
+  addlast(){
+    
+  }
 }
 let a = new LinkedList();
 a.addFirst(3)
 a.addFirst(2)
 a.addFirst(1)
+a.removeFirst()
 a.displayAll()
