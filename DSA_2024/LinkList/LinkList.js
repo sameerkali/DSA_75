@@ -75,15 +75,53 @@
 
 
 
-//! third 
+// //! third 
 
 
 
+
+// class Node{
+//   constructor(data){
+//     this.data = data;
+//     this.next= null;
+//   }
+// }
+// class LinkedList{
+//   constructor(){
+//     this.head = null;
+//   }
+//   addFirst(data){
+//     if(this.head==null){
+//       this.head = new Node(data);
+//     }else{
+//       let temp = new Node(data);
+//       temp.next = this.head;
+//       this.head = temp;
+//     }
+
+//     // console.log(this.head);
+//   }
+//   Display(){
+//     while(this.head != null){
+//       console.log(this.head.data);
+//       this.head = this.head.next;
+//     }
+//   }
+// }
+
+// let list = new LinkedList();
+// list.addFirst(2)
+// list.addFirst(2)
+// list.addFirst(2)
+// list.Display()
+
+
+//* fourth
 
 class Node{
   constructor(data){
     this.data = data;
-    this.next= null;
+    this.next = null;
   }
 }
 class LinkedList{
@@ -91,26 +129,23 @@ class LinkedList{
     this.head = null;
   }
   addFirst(data){
-    if(this.head==null){
-      this.head = new Node(data);
+    if(this.head == null){
+      this.head = new Node(data)
     }else{
       let temp = new Node(data);
-      temp.next = this.head;
-      this.head = temp;
+      temp.next = this.head
+      this.head = temp
     }
-
-    // console.log(this.head);
   }
-  Display(){
+  displayAll(){
     while(this.head != null){
-      console.log(this.head.data);
+      console.log(this.head.data)
       this.head = this.head.next;
     }
   }
 }
-
-let list = new LinkedList();
-list.addFirst(2)
-list.addFirst(2)
-list.addFirst(2)
-list.Display()
+let a = new LinkedList();
+a.addFirst(3)
+a.addFirst(2)
+a.addFirst(1)
+a.displayAll()
