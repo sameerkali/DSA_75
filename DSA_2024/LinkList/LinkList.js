@@ -152,32 +152,65 @@
 
 //! fifth
 
+// class Node {
+//   constructor(data) {
+//     this.data = data;
+//     this.next = null;
+//   }
+// }
+// class LinkedList {
+//   constructor() {
+//     this.head = null;
+//   }
+//   addFirst(data) {
+//     if (this.head == null) {
+//       this.head = new Node(data);
+//     } else {
+//       let temp = new Node(data);
+//       temp.next = this.head;
+//       this.head = temp;
+//     }
+//   }
+//   removeFirst(){
+//     if(this.head == null) return
+//     this.head = this.head.next;
+//   }
+
+//   displayAll() {
+//     while (this.head != null) {
+//       console.log(this.head.data);
+//       this.head = this.head.next;
+//     }
+//   }
+// }
+
+//! sixth
+
 class Node {
   constructor(data) {
     this.data = data;
     this.next = null;
   }
 }
-class LinkedList {
-  constructor() {
+class LinkedList{
+  constructor(){
     this.head = null;
   }
-  addFirst(data) {
-    if (this.head == null) {
-      this.head = new Node(data);
-    } else {
+  addFirst(data){
+    if(this.head == null){
+      this.head = new Node(data)
+    }else{
       let temp = new Node(data);
       temp.next = this.head;
-      this.head = temp;
+      this.head = temp; 
     }
   }
   removeFirst(){
     if(this.head == null) return
-    this.head = this.head.next;
+    this.head = this.head.next
   }
-
-  displayAll() {
-    while (this.head != null) {
+  displayAll(){
+    while(this.head != null){
       console.log(this.head.data);
       this.head = this.head.next;
     }
