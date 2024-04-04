@@ -1,25 +1,20 @@
-html {
-  background: red;
-}
-
 .parent {
   height: 100vh;
   width: 100vw;
   background: palevioletred;
-  /* position: relative; */
 }
 .ch-1 {
-  background: gray;
-  height: 12rem;
-  width: 12rem;
-  position: relative;
-  top: 0rem;
+  background: rgb(164, 90, 90);
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  top: 1rem;
 }
 .ch-2 {
   background: green;
   height: 6rem;
   width: 6rem;
-  /* position: absolute;
-   */
-  /* top: 5rem; */
+  position: relative;
+  top: 1rem;
+  left: 1rem;
 }
