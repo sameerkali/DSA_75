@@ -217,38 +217,58 @@
 //   }
 // }
 
-//! seventh
-class Node {
-  constructor(data) {
+// //! seventh
+// class Node {
+//   constructor(data) {
+//     this.data = data;
+//     this.next = null;
+//   }
+// }
+// class LinkedList {
+//   constructor() {
+//     this.head = null;
+//   }
+
+//   addFirst(data) {
+//     if (this.head == null) {
+//       this.head = new Node(data);
+//     } else {
+//       let temp = new Node(data);
+//       temp.next = this.head;
+//       this.head = temp;
+//     }
+//   }
+//   displayAll() {
+//     while(this.head != null) {
+//       console.log(this.head.data)
+//       this.head = this.head.next;
+//     }
+//   }
+//   removeFirst() {
+//     if(this.head == null) return
+//     this.head = this.head.next;
+//   }
+// }
+
+
+
+// new attempt 
+
+class Node{
+  constructor(data){
     this.data = data;
     this.next = null;
   }
 }
-class LinkedList {
-  constructor() {
+class LinkedList{
+  constructor(){
     this.head = null;
   }
-
-  addFirst(data) {
-    if (this.head == null) {
-      this.head = new Node(data);
-    } else {
-      let temp = new Node(data);
-      temp.next = this.head;
-      this.head = temp;
-    }
-  }
-  displayAll() {
-    while(this.head != null) {
-      console.log(this.head.data)
-      this.head = this.head.next;
-    }
-  }
-  removeFirst() {
-    if(this.head == null) return
-    this.head = this.head.next;
+  addFirst(data){
+    
   }
 }
+
 
 let a = new LinkedList();
 a.addFirst(3);
