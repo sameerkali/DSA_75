@@ -265,7 +265,19 @@ class LinkedList{
     this.head = null;
   }
   addFirst(data){
-    
+    if(this.head == null){
+      this.head = new Node(data)
+    }else{
+      let temp = new Node(data)
+      temp.next = this.head;
+      this.head = temp;
+    }
+  }
+  displayAll(){
+    while(this.head != null){
+      console.log(this.head.data)
+      this.head = this.head.next
+    }
   }
 }
 
@@ -273,5 +285,7 @@ class LinkedList{
 let a = new LinkedList();
 a.addFirst(3);
 a.addFirst(2);
+a.addFirst(1);
+a.addFirst(1);
 a.addFirst(1);
 a.displayAll();
