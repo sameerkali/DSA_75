@@ -279,6 +279,10 @@ class LinkedList{
       this.head = this.head.next
     }
   }
+  removeFirst(){
+    if(this.head == null) return
+    this.head = this.head.next
+  }
 }
 
 
