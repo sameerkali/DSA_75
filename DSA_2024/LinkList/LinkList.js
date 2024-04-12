@@ -293,3 +293,6 @@ a.addFirst(1);
 a.addFirst(1);
 a.addFirst(1);
 a.displayAll();
+a.displayAll();
+
+// its eid today 
