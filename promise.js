@@ -27,14 +27,14 @@ const promise6 = new Promise((resolve, reject) => {
 
 //* promise.all()
 
-Promise.all([promise1, promise2, promise3,promise4, promise5, promise6])
-  .then((res) => {
+Promise.all([promise1, promise2, promise3, promise4, promise5, promise6])
+  .then(res => {
     console.log(res);
   })
-  .catch((err) => {
+  .catch(err => {
     console.log(err);
   });
-  /* first fail one */
+/* first fail one */
 
 //* promise.allSetteld()
 
@@ -45,7 +45,7 @@ Promise.all([promise1, promise2, promise3,promise4, promise5, promise6])
 //   .catch((err) => {
 //     console.log(err);
 //   });
-  /* tell the status of all after executing all */
+/* tell the status of all after executing all */
 
 //* promise.race()
 
@@ -56,7 +56,7 @@ Promise.all([promise1, promise2, promise3,promise4, promise5, promise6])
 //   .catch((err) => {
 //     console.log(err);
 //   });
-  /* tell the fastest one no metter what is the response */
+/* tell the fastest one no metter what is the response */
 
 //* promise.any()
 
@@ -68,4 +68,36 @@ Promise.all([promise1, promise2, promise3,promise4, promise5, promise6])
 //     console.log(err);
 //   });
 
-  /* return first sucess promise */
+/* return first sucess promise */
+
+//! ////////////////////////////////////////
+
+// const uber = new Promise((resolve, reject) => {
+//   const rand = Math.floor(Math.random() * 10);
+//   if (rand % 2 === 0) {
+//     resolve("Yesssss, it's resolved");
+//   } else {
+//     reject("Sorry, it's rejected");
+//   }
+// });
+
+// uber
+//   .then(val => {
+//     console.log(val);
+//   })
+//   .then(()=>console.log("hayyyy"))
+//   .catch(err => {
+//     console.log("Error:", err);
+//   })
+//   .finally(console.log("finally its running"))
+
+/*
+
+Question: what is the difference between ".then(console.log("your message"))" &  ".then(() => console.log("your message"))"
+    
+  जब आप then(console.log("hayyyy")) लिखते हैं, तो आप then() को एक फ़ंक्शन नहीं पास कर रहे होते हैं, बल्कि console.log("hayyyy") को कॉल करने का परिणाम पास कर रहे होते हैं। इसका अर्थ है कि console.log("hayyyy") को तुरंत निष्पादित किया जाता है, प्रॉमिस को हल किया जाता है या न किया जाता है। मूल रूप से, आप console.log() का वापसी मान undefined को then() विधि को पास कर रहे हैं।
+  
+  दूसरी तरफ, जब आप इनलाइन फ़ंक्शन का उपयोग करते हैं, जैसे then(() => console.log("hayyyy")), तो आप then() को एक फ़ंक्शन पास कर रहे होते हैं। यह फ़ंक्शन तुरंत नहीं निष्पादित किया जाता है, लेकिन बाद में, जब प्रॉमिस को हल किया जाता है, तो यह निष्पादित किया जाता है। इसलिए, "hayyyy" को उचित समय पर छापा जाता है, प्रॉमिस हल होने के बाद।
+  
+  सारांश देने के लिए, इनलाइन फ़ंक्शन का उपयोग करने से console.log("hayyyy") का निष्पादन then() में स्थगित होता है, जबकि then(console.log("hayyyy")) का उपयोग console.log("hayyyy") को तुरंत निष्पादित कर देता है और उसका वापसी मान then() को पास करता है।
+    */
