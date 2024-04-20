@@ -45,21 +45,21 @@
 //                                    02 Best Time to Buy and Sell Stock //////////////////////////////////////
 
 // my solution O(n^2)
-let stocks = [1, 3, 10, 5, 2, 6, 7, 4, 8, 9];
-let profit = [];
+// let stocks = [1, 3, 10, 5, 2, 6, 7, 4, 8, 9];
+// let profit = [];
 
-for (let i = 0; i < stocks.length; i++) {
-  for (let j = i; j <= stocks.length; j++) {
-    profit.push(stocks[i] + stocks[j]);
-  }
-}
-// console.log(profit);
-let mainProfit = 0;
-for (let i = 0; i < profit.length; i++) {
-  if (profit[i] > mainProfit) {
-    mainProfit = profit[i]
-  }
-}
+// for (let i = 0; i < stocks.length; i++) {
+//   for (let j = i; j <= stocks.length; j++) {
+//     profit.push(stocks[i] + stocks[j]);
+//   }
+// }
+// // console.log(profit);
+// let mainProfit = 0;
+// for (let i = 0; i < profit.length; i++) {
+//   if (profit[i] > mainProfit) {
+//     mainProfit = profit[i]
+//   }
+// }
 // console.log("the mazimum profit you make in this case : " + mainProfit);
 
 // optimised code O(n)
