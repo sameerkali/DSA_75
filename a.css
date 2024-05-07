@@ -1,3 +1,17 @@
+html {
+  background-image: radial-gradient(
+      circle 5px at top left,
+      rgba(226, 226, 226, 0.1) 0%,
+      rgba(226, 226, 226, 0.1) 50%,
+      rgba(201, 201, 201, 0.1) 50%,
+      rgba(201, 201, 201, 0.1) 30%,
+      transparent 30%,
+      transparent 50%
+    ),
+    linear-gradient(90deg, rgb(51, 51, 51), rgb(51, 51, 51));
+  background-size: 11px 11px;
+}
+
 .parent {
   height: 100vh;
   width: 100vw;
