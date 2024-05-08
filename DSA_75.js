@@ -946,4 +946,3 @@ const countVowels2 = (vowels) => {
   return vowelsLength ? vowelsLength.length : 0;
 };
 // console.log(countVowels2(vowels2));
-// console.log(countVowels2(vowels2));
