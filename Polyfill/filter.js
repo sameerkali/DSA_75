@@ -3,8 +3,6 @@ Array.prototype.filters = function (callback) {
   for (let i = 0; i < this.length; i++) {
     if (callback(this[i], i, this)) {
       result.push(this[i]);
-      result.push(this[i]);
-      result.push(this[i]);
     }
   }
   return result;
