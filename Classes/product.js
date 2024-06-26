@@ -16,3 +16,5 @@ class Product {
 const calltheFunction = new Product("farari", 99990990);
 calltheFunction.displayProduct();
 calltheFunction.loopProfuct();
+
+
