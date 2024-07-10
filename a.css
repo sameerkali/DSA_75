@@ -13,7 +13,7 @@ html {
 }
 
 .parent {
-  height: 100vh;
+  height: 99.9vh;
   width: 100vw;
   background: palevioletred;
 }
