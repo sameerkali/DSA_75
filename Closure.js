@@ -1,16 +1,13 @@
 // Q1 
 function outer() {
     let outerVar = 10;
-  
-    function inner() {
-      console.log(outerVar);
-    }
-  
+     function inner() {
+       console.log(outerVar);
+     }
     return inner;
   }
-  
   const closureFunc = outer();
-//   closureFunc();
+  // closureFunc();
 
 
 
@@ -20,9 +17,8 @@ function greet(name) {
         console.log(`Hello, ${name}!`);
     };
 }
-
 const sayHello = greet('Alice');
-//   sayHello();
+// sayHello();
 
 
 //Q3
@@ -44,11 +40,11 @@ function counter() {
     };
   }
   
-//   const counterInstance = counter();
-//   counterInstance.increment();
-//   counterInstance.increment();
-//   counterInstance.decrement();
-//   console.log(counterInstance.getCount());
+  // const counterInstance = counter();
+  // counterInstance.increment();
+  // counterInstance.increment();
+  // counterInstance.decrement();
+  // console.log(counterInstance.getCount());
   
 
 
@@ -60,8 +56,8 @@ function delayedGreeting(name) {
     }, 1000);
   }
   
-//   delayedGreeting('Bob');
-//   console.log('Greetings sent!');
+  // delayedGreeting('Bob');
+  // console.log('Greetings sent!');
 
 
   
