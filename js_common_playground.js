@@ -147,13 +147,14 @@ const apicall = async () => {
 
 
 //* hoasting 
-// console.log(testfunc)
+console.log("hoasting")
+console.log(testfunc)
 // let test1 = "test1"
-// var test1 = "test1"
+// var test2 = "test2"
 
-// function testfunc(){
-//   return 5
-// }
+function testfunc(){
+  return 5
+}
 
 
 function myFunction() {
