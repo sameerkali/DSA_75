@@ -86,8 +86,18 @@ function createCounter() {
 
 
 
- x= 4
- console.log(x);
+//  x= 4
+//  console.log(x);
 // let x
 // var x 
 // const x
+
+
+const a = 10 
+console.log(a+1)
+const fuinc = () => {
+  console.log(a+2)
+}
+console.log(a+3)
+
+fuinc()
