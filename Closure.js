@@ -89,5 +89,5 @@ function createCounter() {
  x= 4
  console.log(x);
 // let x
-// var x // answer 4
-const x
+// var x 
+// const x
