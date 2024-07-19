@@ -89,12 +89,12 @@ function createCounter() {
 
 // fuinc()
 
-function closures () {
-  const a = 10
+function closures() {
+  const a = 10;
   function inside() {
-    console.log(a)
+    console.log(a);
   }
-  inside()
+  inside();
 }
 
 // closures()
@@ -113,15 +113,12 @@ const closures2 = () => {
 
 // closures2();
 
-
-
-
 //curring
 
 const a = (x) => {
   return (y) => {
     return (z) => {
-      console.log(x+y+z)
+      console.log(x + y + z);
     };
   };
 };
@@ -130,5 +127,22 @@ const a = (x) => {
 // const anb = and(3)
 // let zzz = anb(5)
 
-//or using curring 
+//or using curring
 // a(1)(2)(3)
+
+
+// scope chanin
+// const x2 = 20
+function a1() {
+  var x1 = 10;
+  b1();
+  function b1() {
+    c1();
+    function c1() {
+      console.log(x1);
+    }
+  }
+}
+// console.log(x1);
+// console.log(x2)
+a1();
