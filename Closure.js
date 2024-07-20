@@ -146,3 +146,8 @@ function a1() {
 // console.log(x1);
 // console.log(x2)
 a1();
+
+
+
+
+//practice : 20 July 2024
