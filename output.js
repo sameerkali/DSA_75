@@ -43,7 +43,7 @@
 // // Question - 10
 // console.log([1, 2, 3].indexOf(2));
 
-//! medium
+//! MEDIUM
 
 // Question - 1
 // let x = function() {
@@ -60,7 +60,7 @@
 //   };
 //   const greet = obj.greet;
 //   greet();
-  
+
 // Question - 3
 // let arr = [1, 2, 3, 4, 5];
 // let newArr = arr.filter(num => num > 2);
@@ -71,7 +71,7 @@
 //     return a + b;
 //   }
 //   console.log(add(2, '3'));
-  
+
 // Question - 5
 // let obj = { a: 1, b: 2 };
 // let newObj = { ...obj, c: 3 };
@@ -94,7 +94,7 @@
 //   const counter = outer();
 //   console.log(counter());
 //   console.log(counter());
-  
+
 // Question - 8
 // let person = { name: "Bob" };
 // Object.freeze(person);
@@ -111,4 +111,137 @@
 //     return "data";
 //   }
 //   fetchData().then(data => console.log(data));
-  
+
+// Question - 11
+// const sameerPromise = new Promise((resolve, reject) => {
+//   Math.random() * 10 < 5 ? resolve(1) : reject(0);
+// });
+
+// sameerPromise.then(res => console.log("resolve with :", res)).catch(err => {
+//   console.log("reject with :", err);
+// });
+
+//! HARD
+// Question - 1
+// How do you create and dispatch custom events in JavaScript?
+// Question - 2
+// Question - 3
+// Question - 4
+// Question - 5
+// Question - 6
+// Question - 7
+// Question - 8
+// Question - 9
+// Question - 10
+
+//! SCOPE CHAIN!
+
+// Question - 1
+// function outer() {
+//     let x = 10;
+//     function inner() {
+//       console.log(x);
+//     }
+//     return inner;
+//   }
+//   const innerFunc = outer();
+//   innerFunc();
+
+// Question - 2
+// function createCounter() {
+//     let count = 0;
+//     return function() {
+//       count++;
+//       return count;
+//     };
+//   }
+//   const counter = createCounter();
+//   console.log(counter());
+//   console.log(counter());
+
+// Question - 3
+// function outer() {
+//     let x = 1;
+//     function inner() {
+//       let x = 2;
+//       console.log(x);
+//     }
+//     inner();
+//     console.log(x);
+//   }
+//   outer();
+
+// Question - 4
+// function foo() {
+//     console.log(a);
+//     var a = 1;
+//     console.log(a);
+//   }
+//   foo();
+
+// Question - 5
+// let x = 10;
+// function outer() {
+//   let x = 20;
+//   function inner() {
+//     console.log(x);
+//   }
+//   return inner;
+// }
+// const innerFunc = outer();
+// innerFunc();
+
+// Question - 6
+// function outer() {
+//     let x = 1;
+//     return function() {
+//       console.log(x);
+//     };
+//   }
+//   const innerFunc1 = outer();
+//   const innerFunc2 = outer();
+//   innerFunc1();
+//   innerFunc2();
+
+// Question - 7
+// function foo() {
+//     console.log(a);
+//     let a = 1;
+//   }
+//   foo();
+
+// Question - 8
+// function outer() {
+//     let x = 1;
+//     function inner() {
+//       let y = 2;
+//       console.log(x + y);
+//     }
+//     return inner;
+//   }
+//   const func = outer();
+//   func();
+
+// Question - 9
+// function foo() {
+//     console.log(a);
+//     var a = 1;
+//     function bar() {
+//       console.log(a);
+//       var a = 2;
+//     }
+//     bar();
+//   }
+//   foo();
+
+// Question - 10
+// function createFunction() {
+//     let x = 10;
+//     return function() {
+//       console.log(x);
+//     };
+//   }
+//   let func1 = createFunction();
+//   let func2 = createFunction();
+//   func1();
+//   func2();
