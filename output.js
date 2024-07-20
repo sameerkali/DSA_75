@@ -40,4 +40,4 @@
 // console.log(`Hello, ${name}!`);
 
 // // Question - 10
-// console.log([1, 2, 3].indexOf(2));
+console.log([1, 2, 3].indexOf(2));
