@@ -1,28 +1,29 @@
 
 // 1. What is the output of the following code?
      
-   const person = {
-     name: 'Alice',
-     greet: function() {
-       console.log(`Hello, ${this.name}`);
-     }
-   };
-   const greet = person.greet;
-   greet();
-
-// 2. What is the output of the following code?
-     
 //    const person = {
-//      name: 'Bob',
-//      greet() {
+//      name: 'Alice',
+//      greet: function() {
 //        console.log(`Hello, ${this.name}`);
 //      }
 //    };
-//    const anotherPerson = {
-//      name: 'Charlie',
-//      greet: person.greet
-//    };
-//    anotherPerson.greet();
+//    const greet = person.greet;
+//    greet();
+//    //Hello, undefined
+
+// 2. What is the output of the following code?
+     
+   const person = {
+     name: 'Bob',
+     greet() {
+       console.log(`Hello, ${this.name}`);
+     }
+   };
+   const anotherPerson = {
+     name: 'Charlie',
+     greet: person.greet
+   };
+   anotherPerson.greet();
  
 
 // 3. What is the output of the following code?
