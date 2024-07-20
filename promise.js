@@ -101,3 +101,7 @@ Question: what is the difference between ".then(console.log("your message"))" & 
   
   सारांश देने के लिए, इनलाइन फ़ंक्शन का उपयोग करने से console.log("hayyyy") का निष्पादन then() में स्थगित होता है, जबकि then(console.log("hayyyy")) का उपयोग console.log("hayyyy") को तुरंत निष्पादित कर देता है और उसका वापसी मान then() को पास करता है।
     */
+
+
+
+

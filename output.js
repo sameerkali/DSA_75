@@ -84,16 +84,16 @@
 // console.log(result);
 
 // Question - 7
-function outer() {
-    let count = 0;
-    return function inner() {
-      count++;
-      return count;
-    };
-  }
-  const counter = outer();
-  console.log(counter());
-  console.log(counter());
+// function outer() {
+//     let count = 0;
+//     return function inner() {
+//       count++;
+//       return count;
+//     };
+//   }
+//   const counter = outer();
+//   console.log(counter());
+//   console.log(counter());
   
 // Question - 8
 // let person = { name: "Bob" };
