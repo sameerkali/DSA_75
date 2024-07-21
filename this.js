@@ -1,4 +1,10 @@
 
+
+
+
+
+
+
 // 1. What is the output of the following code?
      
 //    const person = {
@@ -13,17 +19,17 @@
 
 // 2. What is the output of the following code?
      
-   const person = {
-     name: 'Bob',
-     greet() {
-       console.log(`Hello, ${this.name}`);
-     }
-   };
-   const anotherPerson = {
-     name: 'Charlie',
-     greet: person.greet
-   };
-   anotherPerson.greet();
+  //  const person = {
+  //    name: 'Bob',
+  //    greet() {
+  //      console.log(`Hello, ${this.name}`);
+  //    }
+  //  };
+  //  const anotherPerson = {
+  //    name: 'Charlie',
+  //    greet: person.greet
+  //  };
+  //  anotherPerson.greet();
  
 
 // 3. What is the output of the following code?
