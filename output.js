@@ -252,11 +252,10 @@
 // const c = 11
 // b = 14;
 // a = 12;
-// var b = 55; // var can reassign and rediclare as well 
-// // let a =77 // you can reassign let but cannot rediclare 
-// // c= 787 //you cannot reassign or redeclare const variable 
+// var b = 55; // var can reassign and rediclare as well
+// // let a =77 // you can reassign let but cannot rediclare
+// // c= 787 //you cannot reassign or redeclare const variable
 // console.log(a, " / ", b, " / ", c);
-
 
 // function functionScopeExample() {
 //     var x = 10;
@@ -267,5 +266,13 @@
 //     console.log(x); // 20
 // }
 // // console.log(x); // x is not defined
-  
+
 //   functionScopeExample();
+
+//loop issue with var
+
+for (var i = 0; i < 4; i++) {
+  setTimeout(() => {
+    console.log(i);
+  }, 1000);
+}
