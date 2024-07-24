@@ -271,8 +271,19 @@
 
 //loop issue with var
 
-for (var i = 0; i < 4; i++) {
-  setTimeout(() => {
-    console.log(i);
-  }, 1000);
-}
+// for (var i = 0; i < 4; i++) {
+//   setTimeout(() => {
+//     console.log(i);
+//   }, 1000);
+// }
+
+
+let x = 10;
+let y = x++;
+console.log(x);
+console.log(y); 
+
+
+
+
+
