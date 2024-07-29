@@ -1,6 +1,13 @@
-let a = setTimeout(() => {
-    console.log("Two")
-}, 2000);
-let b = setTimeout(() => {
-    console.log("One")
-}, 1000);
+function a() {
+  setTimeout(() => {
+    console.log("Two");
+  }, 1000);
+}
+function b() {
+  setTimeout(() => {
+    console.log("One");
+    a();
+  }, 2000);
+}
+
+b();
