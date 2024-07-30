@@ -15,7 +15,7 @@
     <li>Problem Statements: A collection of 75 problem statements that cover various data structures and algorithmic concepts. Each problem statement provides a clear description of the problem to be solved.</li>
     <li>Solutions: Solutions to the 75 problems are implemented in JavaScript. The solutions aim to provide efficient and optimized approaches to solve the problems.</li>
     <li>Explanations: Detailed explanations accompany each solution, helping you understand the underlying logic and reasoning behind the code. The explanations also provide insights into the time and space complexity of the solutions.</li>
-    <li>Test Cases: For each problem, a set of test cases is provided to validate the correctness of the solutions. These test cases cover different scenarios and edge cases to ensure the solutions handle a variety of inputs correctly.</li>
+    <li>Test Cases: For each problem, a set of test cases is provided to validate the correctness of the solutions. These test cases cover different scenarios and edge cases to ensure the solutions handle a variety of inputs correctly. all questions</li>
   </ol>
   
   <h2>Getting Started</h2>
