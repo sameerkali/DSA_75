@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mantra Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    .mantra {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+    .mantra img {
+      max-width: 10rem;
+      height: auto;
+      border-radius: 8px;
+    }
+    .mantra-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .mantra-details {
+      margin-top: 10px;
+    }
+    .audio-player {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Mantra Player</h1>
+  <div id="mantras-container"></div>
+
+  <script>
+    // Fetch mantras from the API
+    fetch('https://backends.divinezone.in/getAllMantras')
+      .then(response => response.json())
+      .then(data => {
+        const mantrasContainer = document.getElementById('mantras-container');
+        data.data.forEach(mantra => {
+          const mantraDiv = document.createElement('div');
+          mantraDiv.className = 'mantra';
+
+          const title = document.createElement('div');
+          title.className = 'mantra-title';
+          title.textContent = mantra.title;
+
+          const artist = document.createElement('div');
+          artist.textContent = `Artist: ${mantra.artist}`;
+
+          const details = document.createElement('div');
+          details.className = 'mantra-details';
+          details.textContent = mantra.details;
+
+          const artwork = document.createElement('img');
+          artwork.src = mantra.artWork;
+          artwork.alt = mantra.title;
+
+          const audioPlayer = document.createElement('audio');
+          audioPlayer.className = 'audio-player';
+          audioPlayer.controls = true;
+          const source = document.createElement('source');
+          source.src = mantra.URL;
+          source.type = 'audio/mpeg';
+          audioPlayer.appendChild(source);
+
+          mantraDiv.appendChild(artwork);
+          mantraDiv.appendChild(title);
+          mantraDiv.appendChild(artist);
+          mantraDiv.appendChild(details);
+          mantraDiv.appendChild(audioPlayer);
+
+          mantrasContainer.appendChild(mantraDiv);
+        });
+      })
+      .catch(error => console.error('Error fetching mantras:', error));
+  </script>
+
+</body>
+</html>
