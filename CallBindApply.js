@@ -13,3 +13,7 @@ greet.apply(person, ['Apply, Hi', '!!']);
 //bind
 const greetCharlie = greet.bind(person);
 greetCharlie('bind, Hey', '!!!'); 
+
+const greetCharlie2 = greet.bing(person);
+greetCharlie('bind, Hey', '!!!'); 
+
