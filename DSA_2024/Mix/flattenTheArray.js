@@ -42,13 +42,14 @@ var count = 0;
 const flattenArray = (a, arr)=>{
 count++;
     for(let i=0; i<a.length; i++){
-        if(typeof a[i] === "number"){
+        if(Array.isArray(a[i])){
+            flattenArray(a[i], arr)
+        }else{
             arr.push(a[i]);
         }
-        flattenArray(a[i], arr)
     }
     return arr
 }
-const a = [1, 2, 3, [4, [5, 6, [1, [3, 4]]]], 7, 8, [2, [2, [2, [2]]]]];
+const a = [1,{test: 'test'}, 2, 3, [4, [5, 6, [1, [3, 4]]]], 7, 8, [2, [2, [2, [2]]]]];
 const result = flattenArray(a, []);
 console.log(result, count);
