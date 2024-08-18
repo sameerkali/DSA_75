@@ -17,20 +17,38 @@
 
 //! GPT code
 
-const flattenArray = a => {
-  let newA = [];
+// const flattenArray = a => {
+//   let newA = [];
 
-  for (let i = 0; i < a.length; i++) {
-    if (Array.isArray(a[i])) {
-      newA = newA.concat(flattenArray(a[i]))
-    } else {
-      newA.push(a[i]);
+//   for (let i = 0; i < a.length; i++) {
+//     if (Array.isArray(a[i])) {
+//       newA = newA.concat(flattenArray(a[i]))
+//     } else {
+//       newA.push(a[i]);
+//     }
+//   }
+
+//   return newA;
+// };
+
+// const a = [1, 2, 3, [4, [5, 6, [1, [3, 4]]]], 7, 8, [2, [2, [2, [2]]]]];
+// const result = flattenArray(a);
+// console.log(result);
+
+
+
+//!chakde frontend candidate solution
+var count = 0;
+const flattenArray = (a, arr)=>{
+count++;
+    for(let i=0; i<a.length; i++){
+        if(typeof a[i] === "number"){
+            arr.push(a[i]);
+        }
+        flattenArray(a[i], arr)
     }
-  }
-
-  return newA;
-};
-
+    return arr
+}
 const a = [1, 2, 3, [4, [5, 6, [1, [3, 4]]]], 7, 8, [2, [2, [2, [2]]]]];
-const result = flattenArray(a);
-console.log(result);
+const result = flattenArray(a, []);
+console.log(result, count);
