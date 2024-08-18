@@ -26,7 +26,7 @@ const fetchTheData = async () => {
 };
 
 const apicall = async () => {
-  const api = await fetch("https://xjsonplaceholder.typicode.com/users");
+  const api = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = await api.json();
   console.log(data);
 };
