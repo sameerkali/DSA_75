@@ -13,7 +13,7 @@ function twoSum(nums, target) {
   return [];
 }
 
-const nums = [2, 7, 11, 15];
-const target = 9;
+const nums = [2, 7, 11, 15, 45, 100, 544];
+const target = 102;
 const result = twoSum(nums, target);
 console.log(result);
