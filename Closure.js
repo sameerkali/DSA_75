@@ -151,3 +151,38 @@ a1();
 
 
 //practice : 20 July 2024
+
+
+//practice : 01 September 2024
+
+//! question 
+/*
+count() // 1
+count() // 2
+count() // 3
+count.reset()
+count() // 1
+count() // 2
+*/
+
+// answer
+
+const count = ( () => {
+  let counter = 0
+  function incr (){
+      counter++
+      console.log(counter)
+      return counter
+  }
+  incr.reset = function(){
+      counter=0
+  }
+      return incr
+})()
+
+count()
+count()
+count()
+count.reset()
+count()
+count()
