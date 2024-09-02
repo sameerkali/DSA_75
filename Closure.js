@@ -145,7 +145,7 @@ function a1() {
 }
 // console.log(x1);
 // console.log(x2)
-a1();
+// a1();
 
 
 
@@ -180,9 +180,11 @@ const count = ( () => {
       return incr
 })()
 
-count()
-count()
-count()
-count.reset()
-count()
-count()
+// count()
+// count()
+// count()
+// count.reset()
+// count()
+// count()
+
+
