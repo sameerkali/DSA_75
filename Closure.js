@@ -15,7 +15,7 @@ function greet(name) {
     console.log(`Hello, ${name}!`);
   };
 }
-const sayHello = greet("Alice");
+// const sayHello = greet("sameer");
 // sayHello();
 
 //Q3
