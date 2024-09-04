@@ -167,18 +167,18 @@ count() // 2
 
 // answer
 
-const count = ( () => {
-  let counter = 0
-  function incr (){
-      counter++
-      console.log(counter)
-      return counter
-  }
-  incr.reset = function(){
-      counter=0
-  }
-      return incr
-})()
+// const count = ( () => {
+//   let counter = 0
+//   function incr (){
+//       counter++
+//       console.log(counter)
+//       return counter
+//   }
+//   incr.reset = function(){
+//       counter=0
+//   }
+//       return incr
+// })()
 
 // count()
 // count()
@@ -186,5 +186,6 @@ const count = ( () => {
 // count.reset()
 // count()
 // count()
+
 
 
