@@ -105,3 +105,4 @@ Question: what is the difference between ".then(console.log("your message"))" & 
 
 
 
+console.log("promise")
