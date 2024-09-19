@@ -71,16 +71,34 @@
 
 
 
-const flat = (a, arr) => {
-  for (let i = 0; i < a.length; i++) {
-    if (Array.isArray(a[i])) {
-      flat(a[i], arr);
-    } else {
-      arr.push(a[i]);
+// const flat = (a, arr) => {
+//   for (let i = 0; i < a.length; i++) {
+//     if (Array.isArray(a[i])) {
+//       flat(a[i], arr);
+//     } else {
+//       arr.push(a[i]);
+//     }
+//   }
+//   return arr
+// };
+
+// const a = [1,2,3,4,5,[2,[3,4,5,[5,6,7]],4,5,6,7,[2,3,[3,4,5,[5,6,7]]]]];
+// console.log(flat(a, []));
+
+
+
+
+const flot = (a, arr) => {
+  for(let i=0; i< a.length; i++){
+    if(Array.isArray(a[i])){
+      flot(a[i], arr)
+    }else{
+      arr.push(a[i])
     }
   }
   return arr
-};
+}
 
 const a = [1,2,3,4,5,[2,[3,4,5,[5,6,7]],4,5,6,7,[2,3,[3,4,5,[5,6,7]]]]];
-console.log(flat(a, []));
+console.log(flot(a, []))
+
