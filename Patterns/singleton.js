@@ -1,6 +1,8 @@
 /*
 2. Singleton Pattern
-The Singleton Pattern restricts the instantiation of a class to one single instance. It's useful when only one instance of an object is needed throughout the lifecycle of the application.
+The Singleton Pattern restricts the instantiation of a class to one single instance.
+It's useful when only one instance of an object is needed throughout the lifecycle of 
+the application.
 */
 
 
