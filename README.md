@@ -11,7 +11,7 @@
   <h4>`https://jsonplaceholder.typicode.com/posts?_page=${page}&_limit=20`</h4>
   <p>Welcome to the DSA_75 repository! This repository is dedicated to learning and practicing data structures and algorithms using JavaScript. The goal of this repository is to provide a comprehensive collection of 75 common data structure and algorithm problems, along with their solutions, explanations, and test cases.</p>
   <h2>Contents</h2>
-  <p>The repository contains the following:</p>
+  <p>The repository contains the following :</p>
   <ol>
     <li>Problem Statements: A collection of 75 problem statements that cover various data structures and algorithmic concepts. Each problem statement provides a clear description of the problem to be solved.</li>
     <li>Solutions: Solutions to the 75 problems are implemented in JavaScript. The solutions aim to provide efficient and optimized approaches to solve the problems.</li>
