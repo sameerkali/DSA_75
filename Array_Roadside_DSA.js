@@ -19,7 +19,7 @@ const mainString = `    Hay Good Morning Brother`;
 const maxLenght = 9;
 // console.log(truncate(mainString, maxLenght))
 
-// Output : HayGoodMor...
+//! Output : HayGoodMor...
 
 // ----------------------------------------------------------------------
 
