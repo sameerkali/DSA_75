@@ -127,6 +127,7 @@
    
 
 // 10. What is the output of the following code?
+//practice
       
     // class Person {
     //   constructor(name) {
