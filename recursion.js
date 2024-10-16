@@ -16,6 +16,7 @@ function multiply(arr) {
     product *= arr[i];
   }
   return product;
+  
 }
 // console.log(multiply([1, 2, 3, 4]));
 
