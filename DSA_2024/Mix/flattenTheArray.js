@@ -27,7 +27,7 @@
 //       newA.push(a[i]);
 //     }
 //   }
-
+// //}
 //   return newA;
 // };
 
