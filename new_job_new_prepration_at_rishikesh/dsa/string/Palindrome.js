@@ -47,5 +47,9 @@
 
 
 const palindrome = (str) => {
-  
+let a = str.toLowerCase().replace(/ /g, '')
+return a.split('').reverse().join('') === a
 }
+
+let str = "sam a s"
+console.log(palindrome(str))
