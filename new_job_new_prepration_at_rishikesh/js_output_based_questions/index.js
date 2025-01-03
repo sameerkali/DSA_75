@@ -36,3 +36,13 @@
 // console.log(add5(2));
 // console.log(add5(10));
 
+
+// //4
+// for (var i = 0; i < 3; i++) {
+//     setTimeout(function () {
+//         console.log(i);
+//     }, 1000);
+// }
+
+
+// //5
