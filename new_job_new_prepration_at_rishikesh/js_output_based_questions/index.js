@@ -61,12 +61,26 @@
 // funcs[2]();
 
 // //6
-function makeCounter() {
-    let count = 0;
-    return function () {
-        return count++;
-    };
-}
-const counter = makeCounter();
-console.log(counter());
-console.log(counter());
+// function makeCounter() {
+//     let count = 0;
+//     return function () {
+//         return count++;
+//     };
+// }
+// const counter = makeCounter();
+// console.log(counter()); // why this call
+// console.log(counter());
+
+
+// //7
+// function greeting(name) {
+//     return function (message) {
+//         console.log(`${message}, ${name}!`);
+//     };
+// }
+// const greetJohn = greeting("John");
+// greetJohn("Hello");
+// greetJohn("Goodbye");
+// greeting("sameer")("kaise ho")
+
+// //8
