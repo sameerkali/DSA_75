@@ -84,16 +84,26 @@
 // greeting("sameer")("kaise ho")
 
 // //8
-const secret = (function () {
-    let value = 42;
-    return {
-        getValue: function () {
-            return value;
-        },
-    };
-})();
-console.log(secret.getValue());
+// const secret = (function () {
+//     let value = 42;
+//     return {
+//         getValue: function () {
+//             return value;
+//         },
+//     };
+// })();
+// console.log(secret.getValue());
 
+
+// //9
+// function sum(x) {
+//     return function (y) {
+//         return function (z) {
+//             return x + y + z;
+//         };
+//     };
+// }
+// console.log(sum(1)(2)(3));
 
 
 
