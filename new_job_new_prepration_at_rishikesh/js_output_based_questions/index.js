@@ -84,3 +84,16 @@
 // greeting("sameer")("kaise ho")
 
 // //8
+const secret = (function () {
+    let value = 42;
+    return {
+        getValue: function () {
+            return value;
+        },
+    };
+})();
+console.log(secret.getValue());
+
+
+
+
