@@ -105,5 +105,14 @@
 // }
 // console.log(sum(1)(2)(3));
 
+// //10
+// function multiplier(factor) {
+//     return function (number) {
+//         return number * factor;
+//     };
+// }
+// const double = multiplier(2);
+// console.log(double(4));
+
 
 
