@@ -116,3 +116,24 @@
 
 
 
+//// This 
+
+// //1
+// function Timer() {
+//     this.seconds = 0;
+//     setInterval(() => {
+//         this.seconds++;
+//         console.log(this.seconds);
+//     }, 1000);
+// }
+// new Timer();
+
+// //2
+function Timer() {
+    this.seconds = 0;
+    setInterval(() => {
+        this.seconds++;
+        console.log(this.seconds);
+    }, 1000);
+}
+new Timer();
