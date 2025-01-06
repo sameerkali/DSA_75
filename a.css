@@ -1,4 +1,4 @@
-html {
+/* html {
   background-image: radial-gradient(
       circle 5px at top left,
       rgba(226, 226, 226, 0.1) 0%,
@@ -10,9 +10,13 @@ html {
     ),
     linear-gradient(90deg, rgb(51, 51, 51), rgb(51, 51, 51));
   background-size: 11px 11px;
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-
 .parent {
   height: 99.9vh;
   width: 100vw;
@@ -22,18 +26,82 @@ html {
   background: rgb(164, 90, 90);
   height: 10rem;
   width: 10rem;
-  position: absolute;
+  /* position: absolute; */
   top: 1rem;
 }
 .ch-2 {
   background: green;
   height: 6rem;
   width: 6rem;
-  position: relative;
+  /* position: relative; */
   top: 1rem;
   left: 1rem;
 }
 .data{
   top: 1rem;
   left: 1rem;
+}
+.box{
+  height: 200px;
+width: 200px;
+color: green;
+}
+.outer{
+height: 200rem;
+width: 400px;
+background: red;
+margin: 10px;
+padding: 20rem;
+}
+
+.inner-1{
+  height: 50px;
+  width: 50px;
+  background: gray;
+  margin: 5px;
+  /* position: absolute; */
+left: 4rem;
+top: -.5rem;
+}
+
+.inner-2{
+  height: 50px;
+  width: 50px;
+  background: gray;
+  margin: 5px;
+  /* position: relative;  */
+  left: 10px;
+ 
+}
+
+.inner-3{
+  height: 50px;
+  width: 50px;
+  background: gray;
+  margin: 5px;
+
+}
+
+.inner-4{
+  height: 50px;
+  width: 50px;
+  background: gray;
+  margin: 5px;
+ 
+}
+p::first-line{
+ color: red;
+}
+
+.main{
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer{
+  /* position:fixed;
+  bottom: 0;
+  width: 100%; */
 }
