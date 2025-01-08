@@ -5,12 +5,25 @@
 
 
 
+// function rightAngledTriangle(rows) {
+//     for (let i = 1; i <= rows; i++) {
+//         console.log('*'.repeat(i));
+//     }
+// }
+// rightAngledTriangle(5);
+
+/*
 function rightAngledTriangle(rows) {
     for (let i = 1; i <= rows; i++) {
-        console.log('*'.repeat(i));
+        let line = '';
+        for (let j = 1; j <= i; j++) {
+            line += '*';
+        }
+        console.log(line);
     }
 }
 rightAngledTriangle(5);
+*/
 
 
 // *
@@ -20,8 +33,12 @@ rightAngledTriangle(5);
 // *****
 
 
-
-
+const pattern = (a) => {
+    for(let i=0 ; i < a; i++){
+        console.log('*'.repeat(i))
+    }
+}
+pattern(10)
 
 
 // function invertedRightAngledTriangle(rows) {
