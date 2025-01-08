@@ -34,11 +34,28 @@ rightAngledTriangle(5);
 
 
 const pattern = (a) => {
-    for(let i=0 ; i < a; i++){
+    for(let i=a ; i > 0; i--){
         console.log('*'.repeat(i))
     }
 }
 pattern(10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // function invertedRightAngledTriangle(rows) {
