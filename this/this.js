@@ -1,11 +1,38 @@
-// When passing methods as callbacks, the original context can be lost
 
-const person = {
-    name: "Eve",
-    greet() {
-      console.log("Hi, " + this.name);
+
+//   ----------------------------------------------
+
+// function Hi() {
+//   this.hello = 'world'
+//   console.log(this);
+// }
+
+// new Hi() 
+
+// const user = {
+//   firstName: 'Anurag',
+//   lastName: 'Singh',
+//   tags: ['a', 'b', 'c'],
+//   printTags: () => {
+//     console.log(this);
+//   }
+// }
+
+// const body  = document.querySelector('body')
+
+// body.addEventListener('click', (e) => {
+//   console.log(e.target);
+//   console.log(e.currentTarget);
+//   console.log(this);
+// })
+
+class User {
+    constructor () {
+      this.firstName = 'Anurag'
+      console.log(this);
     }
-  };
-  const greetFunc = person.greet;
-  greetFunc(); // Undefined or error, because `this` is not bound to person.
   
+    getUser() {
+      console.log(this);
+    }
+  }
