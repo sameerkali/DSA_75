@@ -32,8 +32,8 @@ function greet(name) {
     console.log(`Hello, ${name}!`);
   };
 }
-// const sayHello = greet("sameer");
-// sayHello();
+const sayHello = greet("sameer");
+sayHello();
 
 //Q3
 function counter() {

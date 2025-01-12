@@ -278,15 +278,19 @@
 // }
 
 
+
+
 let x = 10;
 let y = x++;
 console.log(x);
 console.log(y); 
 
 
-let x = 10;
-x++;
-console.log(x);
+
+
+// let x = 10;
+// x++;
+// console.log(x);
 
 
 
