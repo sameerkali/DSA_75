@@ -23,6 +23,7 @@ function outer() {
   return inner;
 }
 const closureFunc = outer();
+
 // closureFunc();
 
 //Q2
