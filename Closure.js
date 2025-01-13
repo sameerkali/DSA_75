@@ -104,8 +104,8 @@ console.log("counters array: ", counters )
 // Q6: Various JavaScript hoisting and scoping examples
 
 // Example 1: Implicit global declaration if 'var', 'let' or 'const' are not used properly.
-x = 4;
-console.log(x);
+// x = 4;
+// console.log(x);
 
 // Example 2: Declarations using let, var, const (Uncomment the one you want to test)
 // let x;
@@ -114,15 +114,14 @@ console.log(x);
 
 // Another Example:
 const a = 10;
-console.log(a + 1);
+// console.log(a + 1);
 
 const fuinc = () => {
   console.log(a + 2);
 };
 
-console.log(a + 3);
-
-fuinc();
+// console.log(a + 3);
+// fuinc();
 
 // Additional examples (commented out):
 // Using closures:
@@ -228,21 +227,44 @@ count() // 2
 
 
 
-let counterValue = 0;
+// let counterValue = 0;
 
-function count() {
-  counterValue++;
-  console.log(counterValue);
-  return counterValue;
+// function count() {
+//   counterValue++;
+//   console.log(counterValue);
+//   return counterValue;
+// }
+
+// count.reset = function () {
+//   counterValue = 0;
+// };
+
+// count();      
+// count();      
+// count();      
+// count.reset(); 
+// count();      
+// count();      
+
+
+
+function createCounter() {
+let counter = 0;
+function count(){
+  console.log(counter)
+  return counter++
+}
+count.reset = function(){
+  counter=0
+}
+return count
 }
 
-count.reset = function () {
-  counterValue = 0;
-};
+const count = createCounter();
 
-count();      
-count();      
-count();      
-count.reset(); 
-count();      
-count();      
+count();
+count();
+count();
+count.reset();
+count();
+count();
