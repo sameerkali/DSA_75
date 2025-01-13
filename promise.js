@@ -60,13 +60,13 @@ const promise6 = new Promise((resolve, reject) => {
 
 //* promise.any()
 
-Promise.any([promise1, promise2, promise3,promise4, promise5, promise6])
-  .then((res) => {
-    console.log(res);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
+// Promise.any([promise1, promise2, promise3,promise4, promise5, promise6])
+//   .then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
 
 /* return first sucess promise */
 
