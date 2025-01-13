@@ -34,29 +34,29 @@
 
 // 3. What is the output of the following code?
      
-//    function Person(name) {
-//      this.name = name;
-//      this.greet = function() {
-//        console.log(`Hello, ${this.name}`);
-//      };
-//    }
-//    const alice = new Person('Alice');
-//    const greet = alice.greet;
-//    greet();
+  //  function Person(name) {
+  //    this.name = name;
+  //    this.greet = function() {
+  //      console.log(`Hello, ${this.name}`);
+  //    };
+  //  }
+  //  const alice = new Person('Alice');
+  //  const greet = alice.greet;
+  //  greet();
 
 
 // 4. What is the output of the following code?
      
-//    const person = {
-//      name: 'David',
-//      greet: function() {
-//        const innerGreet = () => {
-//          console.log(`Hello, ${this.name}`);
-//        };
-//        innerGreet();
-//      }
-//    };
-//    person.greet();
+  //  const person = {
+  //    name: 'David',
+  //    greet: function() {
+  //      const innerGreet = () => {
+  //        console.log(`Hello, ${this.name}`);
+  //      };
+  //      innerGreet();
+  //    }
+  //  };
+  //  person.greet();
 
 
 // 5. What is the output of the following code?
