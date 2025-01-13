@@ -61,55 +61,55 @@
 
 // 5. What is the output of the following code?
      
-//    const person = {
-//      name: 'Eve',
-//      greet: function() {
-//        setTimeout(function() {
-//          console.log(`Hello, ${this.name}`);
-//        }, 1000);
-//      }
-//    };
-//    person.greet();
+  //  const person = {
+  //    name: 'Eve',
+  //    greet: function() {
+  //      setTimeout(function() {
+  //        console.log(`Hello, ${this.name}`);
+  //      }, 1000);
+  //    }
+  //  };
+  //  person.greet();
    
 
 // 6. What is the output of the following code?
      
-//    function greet() {
-//      console.log(`Hello, ${this.name}`);
-//    }
-//    const person1 = { name: 'Frank', greet };
-//    const person2 = { name: 'Grace', greet };
-//    person1.greet();
-//    person2.greet();
+  //  function greet() {
+  //    console.log(`Hello, ${this.name}`);
+  //  }
+  //  const person1 = { name: 'Frank', greet };
+  //  const person2 = { name: 'Grace', greet };
+  //  person1.greet();
+  //  person2.greet();
    
 
 // 7. What is the output of the following code?
      
-//    const person = {
-//      name: 'Hank',
-//      greet() {
-//        console.log(`Hello, ${this.name}`);
-//      },
-//      farewell: () => {
-//        console.log(`Goodbye, ${this.name}`);
-//      }
-//    };
-//    person.greet();
-//    person.farewell();
+  //  const person = {
+  //    name: 'Hank',
+  //    greet() {
+  //      console.log(`Hello, ${this.name}`);
+  //    },
+  //    farewell: () => {
+  //      console.log(`Goodbye, ${this.name}`);
+  //    }
+  //  };
+  //  person.greet();
+  //  person.farewell();
    
 
 // 8. What is the output of the following code?
      
-//    const person = {
-//      name: 'Ivy',
-//      greet: function() {
-//        const innerGreet = function() {
-//          console.log(`Hello, ${this.name}`);
-//        };
-//        innerGreet.call(this);
-//      }
-//    };
-//    person.greet();
+  //  const person = {
+  //    name: 'Ivy',
+  //    greet: function() {
+  //      const innerGreet = function() {
+  //        console.log(`Hello, ${this.name}`);
+  //      };
+  //      innerGreet.call(this);
+  //    }
+  //  };
+  //  person.greet();
    
 
 // 9. What is the output of the following code?
