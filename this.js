@@ -114,16 +114,16 @@
 
 // 9. What is the output of the following code?
      
-//    const person = {
-//      name: 'Jack',
-//      greet: function() {
-//        const innerGreet = function() {
-//          console.log(`Hello, ${this.name}`);
-//        };
-//        innerGreet.apply(this);
-//      }
-//    };
-//    person.greet();
+  //  const person = {
+  //    name: 'Jack',
+  //    greet: function() {
+  //      const innerGreet = function() {
+  //        console.log(`Hello, ${this.name}`);
+  //      };
+  //      innerGreet.apply(this);
+  //    }
+  //  };
+  //  person.greet();
    
 
 // 10. What is the output of the following code?
