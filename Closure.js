@@ -1,5 +1,5 @@
-// Q-1
-// When passing methods as callbacks, the original context can be lost
+// --------------------------------------------------------------------------
+// Q-1: When passing methods as callbacks, the original context can be lost
 
 const person = {
   name: "Eve",
@@ -7,14 +7,13 @@ const person = {
     console.log("Hi, " + this.name);
   }
 };
+
 const greetFunc = person.greet;
 // greetFunc(); // Undefined or error, because `this` is not bound to person.
+  
+// --------------------------------------------------------------------------
+// Q1: Example of Closure - a function closing over a variable from its parent scope
 
-
-
-
-
-// Q1
 function outer() {
   let outerVar = 10;
   function inner() {
@@ -22,20 +21,25 @@ function outer() {
   }
   return inner;
 }
-const closureFunc = outer();
 
+const closureFunc = outer();
 // closureFunc();
 
-//Q2
+// --------------------------------------------------------------------------
+// Q2: Returning a function that remembers the passed parameter (Closure)
+
 function greet(name) {
   return function () {
     console.log(`Hello, ${name}!`);
   };
 }
-const sayHello = greet("sameer");
-sayHello();
 
-//Q3
+const sayHello = greet("sameer");
+// sayHello();
+
+// --------------------------------------------------------------------------
+// Q3: Object with private state using closures
+
 function counter() {
   let count = 0;
 
@@ -54,23 +58,29 @@ function counter() {
   };
 }
 
+// Usage Example:
 // const counterInstance = counter();
-// counterInstance.increment();
-// counterInstance.increment();
-// counterInstance.decrement();
-// console.log(counterInstance.getCount());
+// counterInstance.increment(); // 1
+// counterInstance.increment(); // 2
+// counterInstance.decrement(); // 1
+// console.log(counterInstance.getCount()); // 1
 
-//Q4
+// --------------------------------------------------------------------------
+// Q4: Using setTimeout to delay a greeting
+
 function delayedGreeting(name) {
   setTimeout(function () {
     console.log(`Hello, ${name}!`);
   }, 1000);
 }
 
+// Usage Example:
 // delayedGreeting('Bob');
 // console.log('Greetings sent!');
 
-//Q5
+// --------------------------------------------------------------------------
+// Q5: Creating multiple functions that share a single counter variable
+
 function createCounter() {
   let count = 0;
   const counters = [];
@@ -80,99 +90,109 @@ function createCounter() {
       console.log(count++);
     });
   }
-
+console.log("counters array: ", counters )
   return counters;
 }
 
-//   const counters = createCounter();
-//   counters[0]();
-//   counters[1]();
-//   counters[2]();
+// const counters = createCounter();
+// Usage Example:
+// counters[0](); // prints 0
+// counters[1](); // prints 1
+// counters[2](); // prints 2
 
-//Q6
+// --------------------------------------------------------------------------
+// Q6: Various JavaScript hoisting and scoping examples
 
-//  x= 4
-//  console.log(x);
-// let x
-// var x
-// const x
+// Example 1: Implicit global declaration if 'var', 'let' or 'const' are not used properly.
+x = 4;
+console.log(x);
 
-// const a = 10
-// console.log(a+1)
-// const fuinc = () => {
-//   console.log(a+2)
-// }
-// console.log(a+3)
+// Example 2: Declarations using let, var, const (Uncomment the one you want to test)
+// let x;
+// var x;
+// const x;
 
-// fuinc()
+// Another Example:
+const a = 10;
+console.log(a + 1);
 
-function closures() {
-  const a = 10;
-  function inside() {
-    console.log(a);
-  }
-  inside();
-}
-
-// closures()
-
-const closures2 = () => {
-  const a = 10;
-  const inside = () => {
-    console.log(a);
-    const inside2 = () => {
-      console.log(a + 1);
-    };
-    inside2();
-  };
-  inside();
+const fuinc = () => {
+  console.log(a + 2);
 };
 
+console.log(a + 3);
+
+fuinc();
+
+// Additional examples (commented out):
+// Using closures:
+
+// function closures() {
+//   const a = 10;
+//   function inside() {
+//     console.log(a);
+//   }
+//   inside();
+// }
+// closures();
+
+// Arrow function with nested arrow functions:
+ 
+// const closures2 = () => {
+//   const a = 10;
+//   const inside = () => {
+//     console.log(a);
+//     const inside2 = () => {
+//       console.log(a + 1);
+//     };
+//     inside2();
+//   };
+//   inside();
+// };
 // closures2();
 
-//curring
+// Currying examples:
 
-const a = (x) => {
-  return (y) => {
-    return (z) => {
-      console.log(x + y + z);
-    };
-  };
-};
-//we can call this way
-// const and = a(2)
-// const anb = and(3)
-// let zzz = anb(5)
+// const a = (x) => {
+//   return (y) => {
+//     return (z) => {
+//       console.log(x + y + z);
+//     };
+//   };
+// };
 
-//or using curring
-// a(1)(2)(3)
+// // We can call this way:
+// const and = a(2);
+// const anb = and(3);
+// anb(5);
 
+// // Or using currying in a single expression:
+// a(1)(2)(3);
 
-// scope chanin
-// const x2 = 20
-function a1() {
-  var x1 = 10;
-  b1();
-  function b1() {
-    c1();
-    function c1() {
-      console.log(x1);
-    }
-  }
-}
-// console.log(x1);
-// console.log(x2)
+// Scope chaining example:
+
+// const x2 = 20;
+// function a1() {
+//   var x1 = 10;
+//   b1();
+//   function b1() {
+//     c1();
+//     function c1() {
+//       console.log(x1);
+//     }
+//   }
+// }
+// // console.log(x1); // This would throw an error because x1 is not in the global scope
+// console.log(x2);
 // a1();
 
+// --------------------------------------------------------------------------
+// Practice Questions:
+// 20 July 2024
 
+// 01 September 2024
 
-
-//practice : 20 July 2024
-
-
-//practice : 01 September 2024
-
-//! question 
+// ! Question: Create a count function that works as follows:
 /*
 count() // 1
 count() // 2
@@ -182,27 +202,40 @@ count() // 1
 count() // 2
 */
 
-// answer
+// Answer Implementation:
 
-// const count = ( () => {
-//   let counter = 0
-//   function incr (){
-//       counter++
-//       console.log(counter)
-//       return counter
+// const count = (() => {
+//   let counter = 0;
+//   function incr() {
+//     counter++;
+//     console.log(counter);
+//     return counter;
 //   }
-//   incr.reset = function(){
-//       counter=0
-//   }
-//       return incr
-// })()
+//   incr.reset = function () {
+//     counter = 0;
+//   };
+//   return incr;
+// })();
 
-// count()
-// count()
-// count()
-// count.reset()
-// count()
-// count()
+// Usage Example:
+// count();
+// count();
+// count();
+// count.reset();
+// count();
+// count();
 
 
 
+
+
+const count = () => {
+  c = 0;
+
+}
+count();
+count();
+count();
+count.reset();
+count();
+count();
