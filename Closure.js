@@ -228,14 +228,21 @@ count() // 2
 
 
 
+let counterValue = 0;
 
-const count = () => {
-  c = 0;
-
+function count() {
+  counterValue++;
+  console.log(counterValue);
+  return counterValue;
 }
-count();
-count();
-count();
-count.reset();
-count();
-count();
+
+count.reset = function () {
+  counterValue = 0;
+};
+
+count();      
+count();      
+count();      
+count.reset(); 
+count();      
+count();      
