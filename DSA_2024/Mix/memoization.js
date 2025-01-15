@@ -32,59 +32,44 @@
 
 
 
-const add = (a,b) => a+b;
-console.log(add(2,4), "normal function") 
 
 
 
 
 
-const memo_add = (a,b) => {
-  let cache = {}
-  return (a,b) => {
-    let key = `${a},${b}`
-  if(key in cache){
-    console.log("data fetching from cache ")
-    return cache[key]
+
+
+
+
+
+
+
+
+
+
+
+const asliCache = {}
+const add2 = (a, b) => {
+  let result = a + b;
+  console.log("calculate the :" + a + "and" + b);
+  return result;
+};
+
+const memoAsli = (a,b) => {
+  let key = `${a},${b}`
+  if(!asliCache[key]){
+    let result = add2(a,b)
+    asliCache[key] = result
+    return result
   }else{
-    cache[key] = a+b;
-    console.log("adding it into cache")
-    return a+b;
-  }
-  
+    console.log("cached result: ", asliCache[key])
   }
 }
 
-let memo = memo_add()
-console.log(memo(2,2))
-console.log(memo(2,2))
-console.log(memo(2,2))
-console.log(memo(10,3))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+memoAsli(2,2)
+memoAsli(2,3)
+memoAsli(2,2)
+memoAsli(2,3)
+memoAsli(2,2)
+memoAsli(2,3)
+memoAsli(2,2)
