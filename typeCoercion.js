@@ -81,3 +81,6 @@
 
 // console.log("5" * "2");  // 10 because both strings are coerced to numbers
 // console.log(Number("5") * Number("2"));  // 10
+
+
+
