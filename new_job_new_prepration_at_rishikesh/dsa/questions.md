@@ -1,25 +1,80 @@
-## Strings
+my target for next 4 months 
 
-Reverse a String.
-Check if a String is a Palindrome.
-Find the First Non-Repeating Character in a String.
-Implement strStr() or IndexOf.
-Longest Common Prefix.
-Count and Say Sequence.
-Check if Two Strings are Anagrams.
-Valid Parentheses.
-Remove Duplicates from a String.
-Check for Pangram.
+Arrays & Strings (2 weeks)
 
-## Arrays
 
-Two Sum.
-Remove Duplicates from a Sorted Array.
-Maximum Subarray (Kadane's Algorithm).
-Move Zeroes to End.
-Rotate Array.
-Merge Two Sorted Arrays.
-Intersection of Two Arrays.
-Find Missing Number (using XOR or summation).
-Check if Array is Sorted and Rotated.
-Best Time to Buy and Sell Stock.
+Two Sum
+Best Time to Buy and Sell Stock
+Container With Most Water
+Longest Substring Without Repeating Characters
+3Sum
+
+
+Two Pointers & Sliding Window (2 weeks)
+
+
+Valid Palindrome
+Remove Duplicates from Sorted Array
+Minimum Size Subarray Sum
+Longest Repeating Character Replacement
+Minimum Window Substring
+
+
+Binary Search (1 week)
+
+
+Binary Search
+Search in Rotated Sorted Array
+Find First and Last Position
+Median of Two Sorted Arrays
+Search a 2D Matrix
+
+
+Stack & Queue (1 week)
+
+
+Valid Parentheses
+Daily Temperatures
+Implement Queue using Stacks
+Largest Rectangle in Histogram
+Min Stack
+
+
+LinkedList (2 weeks)
+
+
+Reverse Linked List
+Merge Two Sorted Lists
+Linked List Cycle
+LRU Cache
+Merge k Sorted Lists
+
+
+Trees (3 weeks)
+
+
+Maximum Depth of Binary Tree
+Same Tree
+Binary Tree Level Order Traversal
+Validate Binary Search Tree
+Serialize and Deserialize Binary Tree
+
+
+Graphs (3 weeks)
+
+
+Number of Islands
+Clone Graph
+Course Schedule
+Word Ladder
+Graph Valid Tree
+
+
+Dynamic Programming (4 weeks)
+
+
+Climbing Stairs
+House Robber
+Longest Increasing Subsequence
+Coin Change
+Word Break
