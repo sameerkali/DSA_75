@@ -48,28 +48,95 @@
 
 
 
-const asliCache = {}
-const add2 = (a, b) => {
-  let result = a + b;
-  console.log("calculate the :" + a + "and" + b);
-  return result;
-};
+// const asliCache = {}
+// const add2 = (a, b) => {
+//   let result = a + b;
+//   console.log("calculate the :" + a + "and" + b);
+//   return result;
+// };
 
-const memoAsli = (a,b) => {
+// const memoAsli = (a,b) => {
+//   let key = `${a},${b}`
+//   if(!asliCache[key]){
+//     let result = add2(a,b)
+//     asliCache[key] = result
+//     return result
+//   }else{
+//     console.log("cached result: ", asliCache[key])
+//   }
+// }
+
+// memoAsli(2,2)
+// memoAsli(2,3)
+// memoAsli(2,2)
+// memoAsli(2,3)
+// memoAsli(2,2)
+// memoAsli(2,3)
+// memoAsli(2,2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const memo = {}
+const add = (a,b) => {
+  let ans = a+b
+  console.log(ans)
+  return ans
+}
+
+const memoAdd = (a,b) => {
   let key = `${a},${b}`
-  if(!asliCache[key]){
-    let result = add2(a,b)
-    asliCache[key] = result
-    return result
+  if(!memo[key]){
+    let res = add(a,b)
+    memo[key] = res
+    return res
   }else{
-    console.log("cached result: ", asliCache[key])
+    return memo[key]
   }
 }
 
-memoAsli(2,2)
-memoAsli(2,3)
-memoAsli(2,2)
-memoAsli(2,3)
-memoAsli(2,2)
-memoAsli(2,3)
-memoAsli(2,2)
+memoAdd(1,2)
+memoAdd(1,2)
+memoAdd(1,2)
+memoAdd(1,2)
+memoAdd(1,2)
