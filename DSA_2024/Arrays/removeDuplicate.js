@@ -1,9 +1,7 @@
 const removeDuplicate = (arr) => {
     let container = new Set
     for (let i = 0; i < arr.length; i++) {
-        if(!container.has(arr[[i]])){
-            container.add(arr[i])
-        }
+        container.add(arr[i])
     }
     return Array.from(container)
 }
