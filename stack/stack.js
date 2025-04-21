@@ -16,6 +16,7 @@ var numberOfBeams = function (bank) {
                 currentLasers += 1
             }
         }
+        
 
         if (currentLasers) {
             totalLasers.push(currentLasers);
