@@ -6,7 +6,7 @@ console.log(a.filter((i)=> i%2))
 
 // var a = 2;
 function func() {
-  // var a = 3;
+  var a = 3;
 
   console.log(a);
 };
