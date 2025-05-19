@@ -1,0 +1,26 @@
+//! 1
+// const getMax = (a, b) => {
+//   if (a === 0 || b === 0) return 0;
+
+//   return Math.max(a, b);
+// };
+
+// console.log(getMax(0, 0));
+
+//! 2. FizzBuzz: Print numbers 1-100. For multiples of 3 print "Fizz", 
+//!   multiples of 5 "Buzz", both "FizzBuzz"
+const FizzBuzz = (num) => {
+    if (num === 0) return 0;
+
+    if (num % 3 === 0 && num % 5 === 0) {
+        return "FizzBuzz";
+    } else if (num % 5 === 0) {
+        return "Buzz";
+    } else if (num % 3 === 0) {
+        return "Fizz";
+    } else {
+        return num;
+    }
+}
+
+console.log(FizzBuzz(42));
