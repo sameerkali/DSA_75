@@ -7,7 +7,6 @@ Function.prototype.binds = function (context) {
   // Get the additional arguments passed to bind
   const args = Array.prototype.slice.call(arguments, 1);
 
-  // Return a new function that, when called, will execute the original function with the specified context and arguments
   return function () {
     const combinedArgs = args.concat(Array.prototype.slice.call(arguments));
     return fn.apply(context, combinedArgs);
