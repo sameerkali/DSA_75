@@ -21,4 +21,4 @@ const myModule = (function() {
     };
 })();
 
-myModule.publicMethod(); // I am private
+myModule.publicMethod()
