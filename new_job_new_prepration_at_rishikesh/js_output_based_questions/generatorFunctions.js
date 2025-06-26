@@ -11,3 +11,4 @@ const sa = [...gen(), 6,7,8]
 console.log(sa)
 
 sa.map((a) => (console.log(a)))
+
