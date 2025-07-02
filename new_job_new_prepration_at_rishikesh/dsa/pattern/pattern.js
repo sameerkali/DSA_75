@@ -127,7 +127,6 @@ pattern(10)
 // }
 // squarePattern(5);
 
-
 // *****
 // *   *
 // *   *
