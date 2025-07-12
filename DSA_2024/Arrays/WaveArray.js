@@ -18,7 +18,6 @@ const convertToWave = (n, arr) => {
   return arr;
 };
 
-// Test cases
 console.log(convertToWave(5, [1, 2, 3, 4, 5])); // Output: [2, 1, 4, 3, 5]
 // console.log(convertToWave(4, [1, 2, 3, 4])); // Output: [ 2, 1, 4, 3 ]
 // console.log(convertToWave(6, [2, 4, 6, 8, 10, 12])); // Output: [4, 2, 8, 6, 12, 10]
