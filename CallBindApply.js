@@ -14,6 +14,6 @@ greet.apply(person, ['Apply, Hi', '!!']);
 const greetCharlie = greet.bind(person);
 greetCharlie('bind, Hey', '!!!'); 
 
-const greetCharlie2 = greet.bing(person);
-greetCharlie('bind, Hey', '!!!'); 
+const greetCharlie2 = greet.bind(person);
+greetCharlie2('bind, Hey', '!!!'); 
 
