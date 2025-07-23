@@ -268,3 +268,13 @@ count();
 count.reset();
 count();
 count();
+
+
+
+// Global Scope
+//   |
+//   |-- outer() Lexical Env
+//         |
+//         |-- Variables: { count: 0 }
+//         |
+//         |-- inner() ← keeps reference to this
