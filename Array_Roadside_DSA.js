@@ -30,6 +30,7 @@ const maxLenght = 9;
 Solution :
 */
 
+
 const PalindromeNumber = (num) => {
   const numString = num.toString();
   let leftPointer = 0;
