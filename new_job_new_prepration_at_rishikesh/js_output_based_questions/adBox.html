@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box-calss" id="box-id"></div>
+    <button>click me toadd a box</button>
+  </body>
+  <script>
+    let box = document.getElementById("box-id");
+    let button = document.querySelector("button");
+
+    button.addEventListener("click", function () {
+      let newBox = document.createElement("div");
+      newBox.className = "box-calss";
+      newBox.style.width = "100px";
+      newBox.style.height = "100px";
+      newBox.style.margin = "10px";
+      newBox.style.backgroundColor = "blue";
+      box.appendChild(newBox);
+    });
+  </script>
+</html>
