@@ -10,7 +10,6 @@ class Car {
     }
 }
 
-
 class CarFactory {
     createCar(make, model) {
         return new Car(make, model);
