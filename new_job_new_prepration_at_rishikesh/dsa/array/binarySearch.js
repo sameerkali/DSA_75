@@ -25,6 +25,5 @@ console.log(binarySearch(sortedArr, target));
 // const search = (arr, target) =>{
 // return arr.indexOf(target)
 // }
-
 // let array = [10,20,3,4,5,6]
 // console.log(search(array, 5))
