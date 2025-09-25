@@ -158,7 +158,6 @@
 // const counter2 = createCounter();
 // counter1(); 
 // counter1(); 
-// counter2(); 
 
 // // Question 2
 // const user = {
