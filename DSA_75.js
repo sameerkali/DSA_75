@@ -948,21 +948,6 @@ const countVowels2 = (vowels) => {
 };
 // console.log(countVowels2(vowels2));
 
-
-
-
-/**
- * Definition for a binary tree node.
- * function TreeNode(val, left, right) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.left = (left===undefined ? null : left)
- *     this.right = (right===undefined ? null : right)
- * }
- */
-/**
- * @param {TreeNode} root
- * @return {boolean}
- */
 var evaluateTree = function(root) {
   function helper(node) {
       if (node.val === 0 || node.val === 1) {
