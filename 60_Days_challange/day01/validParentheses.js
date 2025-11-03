@@ -21,3 +21,6 @@ const isValid = function (s) {
 
 let string = "{[()]}";
 console.log(isValid(string));
+
+
+      // if (stack.pop() !== "(") return false;
